@@ -1,13 +1,18 @@
 body {
-  font-family: $manrope;
-  font-size: 1.8rem;
+  font-family: $roboto;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.2;
-  color: $white;
-  background: $dark;
+  color: $black;
+  background: $white;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .container {
-    margin: 0 auto;
-    max-width: 126rem;
-    padding: 0 2rem;
+  margin: 0 auto;
+  max-width: 164rem;
+  padding: 0 2rem;
 }
