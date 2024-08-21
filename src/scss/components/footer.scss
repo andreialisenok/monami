@@ -1,32 +1,76 @@
 .footer {
   &__top {
     border-top: 1px solid $orange;
-    border-bottom: 1px solid $orange;
     padding: 20px 0;
     background: $white;
-  }
-  &__middle {
-    padding: 20px 0;
-    background: $white;
+    position: relative;
+    .footer__row {
+      display: grid;
+      grid-template-areas: 'menu' 'phones' 'contacts';
+      grid-template-columns: 1fr;
+      gap: 20px;
+      @media (min-width: 576px) {
+        grid-template-areas: 'logo contacts' 'phones menu';
+        grid-template-columns: auto auto;
+      }
+      @media (min-width: 992px) {
+        grid-template-areas:
+          'menu menu'
+          'phones phones'
+          'logo contacts';
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 992px) {
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: $orange;
+        top: 58px;
+      }
+    }
   }
   &__bottom {
     padding: 20px 0;
     background: $gray;
+    .footer__row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
   }
-  &__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  .logo {
+    max-width: 105px;
+    height: 60px;
+    display: none;
+    @media (min-width: 576px) {
+      grid-area: logo;
+      display: block;
+    }
+    @media (min-width: 992px) {
+      justify-self: flex-end;
+    }
   }
   .phones {
     display: flex;
-    align-items: center;
     gap: 10px;
     grid-area: phones;
-    @media (max-width: 767px) {
-      flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 1200px) {
+        gap: 20px;
+      }
     }
     a {
       display: flex;
@@ -42,7 +86,11 @@
         grid-area: tel2;
       }
       &:hover {
-        color: $orange;
+        color: $blue;
+        i {
+          color: $blue;
+          opacity: 1;
+        }
       }
       img {
         height: 15px;
@@ -50,7 +98,9 @@
         object-fit: cover;
       }
       i {
-        color: $orange;
+        transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        color: $black;
+        opacity: 0.5;
       }
     }
   }
@@ -66,12 +116,13 @@
     gap: 10px;
     height: 40px;
     padding: 0 10px;
-    border: 1px solid $orange;
+    border: 1px solid $black;
     border-radius: 5px;
     cursor: pointer;
+    color: $black;
     transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
     i {
-      color: $orange;
+      color: rgba(0, 0, 0, 0.5);
       transition: color 0.3s ease-in-out;
     }
     &:hover {
@@ -87,8 +138,9 @@
     display: flex;
     gap: 10px;
     grid-area: contacts;
-    @media (max-width: 767px) {
-      flex-direction: column;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
     }
     a {
       display: flex;
@@ -97,10 +149,16 @@
       color: $black;
       transition: color 0.3s ease-in-out;
       &:hover {
-        color: $orange;
+        color: $blue;
+        i {
+          color: $blue;
+          opacity: 1;
+        }
       }
       i {
-        color: $orange;
+        transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        color: $black;
+        opacity: 0.5;
       }
     }
     div {
@@ -109,22 +167,30 @@
       line-height: 1;
       color: $black;
       i {
-        color: $orange;
+        color: $black;
+        opacity: 0.5;
       }
     }
   }
   .menu {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
-    @media (max-width: 767px) {
-      flex-direction: column;
+    grid-area: menu;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    @media (min-width: 1200px) {
+      gap: 20px;
     }
     &__link {
       color: $black;
       transition: color 0.3s ease-in-out;
       &:hover {
-        color: $orange;
+        color: $blue;
       }
     }
   }
@@ -136,7 +202,7 @@
   .payment {
     img {
       max-width: 500px;
-      filter: grayscale(1);
+      // filter: grayscale(1);
     }
   }
 }

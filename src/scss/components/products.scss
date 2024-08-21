@@ -1,0 +1,99 @@
+.products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+    padding: 20px;
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray;
+    }
+    @media (min-width: 576px) {
+      width: 50%;
+    }
+    @media (min-width: 992px) {
+      width: 33.33333%;
+    }
+    @media (min-width: 1200px) {
+      width: 20%;
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    .img {
+      padding: 30px;
+    }
+    &:hover {
+      h3 {
+        color: $orange;
+      }
+    }
+    h3 {
+      transition: color 0.3s ease-in-out;
+      color: $black;
+    }
+  }
+
+  .favorite {
+    width: 20px;
+    height: 20px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    z-index: 100;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .view {
+    width: 20px;
+    height: 20px;
+    background: none;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 2rem;
+    z-index: 100;
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: $blue;
+    }
+  }
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    span {
+      text-transform: uppercase;
+      span {
+        color: $black;
+        font-weight: 700;
+      }
+    }
+    .basket {
+      background: none;
+      border: 1px solid $black;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 120px;
+      height: 40px;
+      color: $black;
+      font-weight: 700;
+      text-transform: uppercase;
+      &:hover {
+        border: 1px solid $blue;
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+}

@@ -46,20 +46,21 @@
                 <button class="phones" type="button"><i class="fa-solid fa-phone"></i>
                   <div class="phones__list"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
                 </button>
-                <p class="subtext">Ведущий поставщик сувенирной продукции и товаров для дома.</p><a class="all-items" href="./products.html"><i class="fa-solid fa-list"></i>Все товары</a>
+                <p class="subtext">Ведущий поставщик сувенирной продукции и товаров для дома.</p>
+                <button class="all-items" type="button"><i class="fa-solid fa-list"></i>Все товары</button>
                 <button class="search" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <div class="search-input">
                   <input type="text" placeholder="Поиск">
                   <button class="search-input__close" type="button"><i class="fa-solid fa-xmark"></i></button>
                 </div>
-                <button class="favorite" type="button"><i class="fa-regular fa-heart"></i><span class="favorite__count">10</span></button>
+                <button class="favorite" type="button"><i class="fa-solid fa-heart"></i><span class="favorite__count">10</span></button>
                 <button class="basket" type="button"><i class="fa-solid fa-cart-shopping"></i><span class="basket__count">0</span></button>
                 <button class="login" type="button"><i class="fa-solid fa-user"></i></button>
                 <button class="burger" type="button"><span></span><span></span><span></span></button>
               </nav>
               <nav class="nav-mobile">
                 <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="./products.html">Все товары</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Все товары</a></li>
                   <li class="menu__item"><a class="menu__link" href="#">НОВОЕ ПОСТУПЛЕНИЕ</a>
                     <ul class="submenu">
                       <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
@@ -261,33 +262,26 @@
         </ul>
       </header>
       <main class="main">
-        <div class="swiper carousel">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="./img/slide1.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/slide2.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/slide1.jpg" alt=""></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/slide2.jpg" alt=""></a></div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-        <div class="categories">
-          <div class="container">
-            <div class="categories__row">
-              <h2>Наши категории</h2>
-              <ul class="categories__list">
-                <li class="categories__item"><a class="categories__link" href="#"><img src="./img/categories/home.jpg" alt=""><span>НОВОЕ ПОСТУПЛЕНИЕ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/kitchen.jpg" alt=""><span>АКЦИИ/РАСПРОДАЖИ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/newyear.jpg" alt=""><span>КУХНЯ, ХОЗТОВАРЫ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/kitchen.jpg" alt=""><span>МЕШКИ С РУЧКАМИ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/newyear.jpg" alt=""><span>ДЕКОР и ПОДАРКИ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/home.jpg" alt=""><span>СУМКИ-ТЕЛЕЖКИ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/kitchen.jpg" alt=""><span>ДАЧА, ПИКНИК, ТУРИЗМ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/newyear.jpg" alt=""><span>РЕПЕЛЛЕНТЫ</span></a></li>
-                <li class="categories__item"><a class="categories__link" href=""><img src="./img/categories/home.jpg" alt=""><span>НОВЫЙ ГОД</span></a></li>
-              </ul>
+        <div class="container">
+          <div class="main__row">
+            <div class="swiper carousel-product">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
+            <div class="thumbsSlide swiper carousel-product2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+              </div>
+            </div>
+            <div class="product"></div>
           </div>
         </div>
       </main>
@@ -323,6 +317,7 @@
           </div>
         </div>
       </footer>
+      <div class="overlay"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

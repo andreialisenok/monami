@@ -93,7 +93,7 @@ html
                                         i(class="fa-solid fa-phone-volume")
                                         | Обратный звонок
                             p.subtext Ведущий поставщик сувенирной продукции и товаров для дома.
-                            a(href="./products.html").all-items
+                            button(type="button").all-items
                                 i(class="fa-solid fa-list")
                                 |Все товары
                             button(type="button").search
@@ -103,7 +103,7 @@ html
                                 button(type="button").search-input__close
                                     i(class="fa-solid fa-xmark")
                             button(type="button").favorite
-                                i(class="fa-regular fa-heart")
+                                i(class="fa-solid fa-heart")
                                 span.favorite__count 10
                             button(type="button").basket
                                 i(class="fa-solid fa-cart-shopping")
@@ -117,7 +117,7 @@ html
                         nav.nav-mobile
                             ul.menu
                                 li.menu__item
-                                    a(href="./products.html").menu__link Все товары
+                                    a(href='#').menu__link Все товары
                                 li.menu__item
                                     a(href='#').menu__link НОВОЕ ПОСТУПЛЕНИЕ
                                     ul.submenu
@@ -443,64 +443,152 @@ html
                 li.menu__item
                                     a(href='#').menu__link НОВЫЙ ГОД
         main.main
-            .swiper.carousel
-                .swiper-wrapper
-                    .swiper-slide
-                        a(href="#")
-                            img(src="./img/slide1.jpg", alt="")
-                    .swiper-slide
-                        a(href="#")
-                            img(src="./img/slide2.jpg", alt="")
-                    .swiper-slide
-                        a(href="#")
-                            img(src="./img/slide1.jpg", alt="")
-                    .swiper-slide
-                        a(href="#")
-                            img(src="./img/slide2.jpg", alt="")
-                .swiper-pagination
-                .swiper-button-prev
-                .swiper-button-next
-            .categories
-                .container
-                    .categories__row
-                        h2 Наши категории
-                        ul.categories__list
-                            li.categories__item
-                                a(href="#").categories__link
-                                    img(src="./img/categories/home.jpg", alt="")
-                                    span НОВОЕ ПОСТУПЛЕНИЕ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/kitchen.jpg", alt="")
-                                    span АКЦИИ/РАСПРОДАЖИ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/newyear.jpg", alt="")
-                                    span КУХНЯ, ХОЗТОВАРЫ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/kitchen.jpg", alt="")
-                                    span МЕШКИ С РУЧКАМИ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/newyear.jpg", alt="")
-                                    span ДЕКОР и ПОДАРКИ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/home.jpg", alt="")
-                                    span СУМКИ-ТЕЛЕЖКИ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/kitchen.jpg", alt="")
-                                    span ДАЧА, ПИКНИК, ТУРИЗМ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/newyear.jpg", alt="")
-                                    span РЕПЕЛЛЕНТЫ
-                            li.categories__item
-                                a(href="").categories__link
-                                    img(src="./img/categories/home.jpg", alt="")
-                                    span НОВЫЙ ГОД
+            .container
+                .main__row
+                    ul.products
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                        li.products__item
+                            a(href="#").products__link
+                                .img
+                                    img(src="./img/products/product1.jpg", alt="")
+                                h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
+                            button(type="button").favorite
+                                i(class="fa-regular fa-heart")
+                            button(type="button" data-fancybox data-src="./img/products/product1.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                    i(class="fa-solid fa-expand")
+                            .cart
+                                span Цена: 
+                                    span 5,17 Руб.
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
         footer.footer
             .footer__top
                 .container
@@ -562,6 +650,7 @@ html
                         p.text Республика Беларусь, ООО "Мон Ами", УНП 191029787. Дата регистрации в торговом реестре интернет-магазина monami.by 03.05.2021 номер гос. регистрации 509027. Свидетельство о гос. регистрации N191029787 от 29.05.2008, выдано Минским городским исполнительным комитетом
                         .payment
                             img(src="./img/webpay.png", alt="")
+        .overlay
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
         script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js")
