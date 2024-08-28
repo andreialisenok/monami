@@ -1,8 +1,8 @@
 const swiper = new Swiper('.carousel', {
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   loop: true,
   effect: 'fade',
   pagination: {
