@@ -1348,9 +1348,15 @@ input[type=number] {
   }
 }
 .swiper-wrap .swiper {
+  margin-top: -50px;
   max-width: 1700px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 992px) {
+  .swiper-wrap .swiper {
+    margin-top: 0px;
+  }
 }
 .swiper-wrap .swiper:hover .swiper-button-prev {
   -webkit-transform: translateX(50%);
@@ -1363,7 +1369,6 @@ input[type=number] {
   opacity: 1;
 }
 .swiper-wrap .swiper .swiper-wrapper .swiper-slide img {
-  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
 }

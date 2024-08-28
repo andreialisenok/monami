@@ -3,8 +3,12 @@
     padding: 0 20px;
   }
   .swiper {
+    margin-top: -50px;
     max-width: 1700px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    @media (min-width: 992px) {
+      margin-top: 0px;
+    }
     &:hover {
       .swiper-button-prev {
         transform: translateX(50%);
@@ -18,7 +22,6 @@
     .swiper-wrapper {
       .swiper-slide {
         img {
-          height: 600px;
           object-fit: cover;
         }
       }
