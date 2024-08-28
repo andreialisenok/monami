@@ -100,3 +100,23 @@ mobileOverlay.addEventListener('click', (e) => {
   body.classList.toggle('is-lock');
   mobileOverlay.classList.toggle('active');
 });
+
+const login = document.querySelectorAll('.login');
+const modal = document.querySelector('.modal');
+const modalForm = document.querySelector('.modal form');
+const btnModalClose = document.querySelector('.modal .close');
+login.forEach((item) => {
+  item.addEventListener('click', () => {
+    modal.classList.add('isOpen');
+  });
+});
+
+btnModalClose.addEventListener('click', () => {
+  modal.classList.remove('isOpen');
+});
+modal.addEventListener('click', (e) => {
+  modal.classList.remove('isOpen');
+});
+modalForm.addEventListener('click', (e) => {
+  e.stopPropagation();
+});

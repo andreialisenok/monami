@@ -98,4 +98,22 @@ mobileOverlay.addEventListener('click', function (e) {
   body.classList.toggle('is-lock');
   mobileOverlay.classList.toggle('active');
 });
+var login = document.querySelectorAll('.login');
+var modal = document.querySelector('.modal');
+var modalForm = document.querySelector('.modal form');
+var btnModalClose = document.querySelector('.modal .close');
+login.forEach(function (item) {
+  item.addEventListener('click', function () {
+    modal.classList.add('isOpen');
+  });
+});
+btnModalClose.addEventListener('click', function () {
+  modal.classList.remove('isOpen');
+});
+modal.addEventListener('click', function (e) {
+  modal.classList.remove('isOpen');
+});
+modalForm.addEventListener('click', function (e) {
+  e.stopPropagation();
+});
 //# sourceMappingURL=main.js.map

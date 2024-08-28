@@ -201,6 +201,7 @@
       cursor: pointer;
       transition: color 0.3s linear, background 0.3s linear, border 0.3s linear;
       border: 1px solid $light-gray;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
       background: $white;
       &:hover {
         border: 1px solid $orange;
@@ -225,6 +226,7 @@
       transition: color 0.3s linear, background 0.3s linear, border 0.3s linear;
       border: 1px solid $light-gray;
       background: $white;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
       &:hover {
         border: 1px solid $orange;
         background: $orange;
@@ -255,6 +257,12 @@
         border-radius: 5px;
         padding: 10px 30px 10px 10px;
         width: 100%;
+        &:focus,
+        &:active,
+        &:focus {
+          outline: auto;
+          outline-color: $orange;
+        }
       }
     }
     .basket {
@@ -535,6 +543,12 @@
       border: none;
       border-radius: 5px;
       padding: 10px 30px 10px 10px;
+      &:focus,
+      &:active,
+      &:focus {
+        outline: auto;
+        outline-color: $orange;
+      }
     }
     &__close {
       background: none;
@@ -726,6 +740,13 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      &:first-child {
+        .menu__link {
+          background: $light-gray;
+          color: $orange;
+          font-weight: 700;
+        }
+      }
       &:hover {
         .menu__link {
           color: $orange;

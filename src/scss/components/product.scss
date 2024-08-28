@@ -40,7 +40,15 @@
           z-index: 100;
           transition: color 0.3s linear;
           &:hover {
-            color: $orange;
+            svg {
+              fill: $orange;
+            }
+          }
+          svg {
+            transition: fill 0.3s linear;
+            fill: $gray;
+            width: 16px;
+            height: 16px;
           }
         }
       }
@@ -56,25 +64,35 @@
         }
       }
       .swiper-button-prev {
+        background: $white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
         color: $gray;
-        left: 0;
         transition: color 0.3s linear;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         &:hover {
           color: $orange;
         }
         &::after {
-          font-size: 3rem;
+          font-size: 1.5rem;
+          font-weight: 700;
         }
       }
       .swiper-button-next {
-        right: 0;
+        background: $white;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
         color: $gray;
         transition: color 0.3s linear;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         &:hover {
           color: $orange;
         }
         &::after {
-          font-size: 3rem;
+          font-size: 1.5rem;
+          font-weight: 700;
         }
       }
     }
@@ -93,7 +111,7 @@
     }
     .price {
       display: flex;
-      gap: 30px;
+      gap: 15px;
       span {
         &:nth-child(1) {
           span {
@@ -104,13 +122,14 @@
         &:nth-child(2) {
           position: relative;
           color: $black;
+          font-style: italic;
           &::before {
             position: absolute;
             display: block;
             content: '';
             width: 100%;
             height: 1px;
-            background: $gray;
+            background: $red;
             top: 50%;
             transform: translateY(-50%);
           }
@@ -120,6 +139,8 @@
     .cart {
       display: flex;
       align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
       gap: 30px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -149,7 +170,7 @@
           transition: background 0.3s linear, color 0.3s linear;
           color: $black;
           &:hover {
-            background: $light-blue;
+            background: #e52e6b;
             i {
               color: $white;
             }
@@ -161,7 +182,7 @@
         }
       }
       .basket {
-        background: $blue;
+        background: #e52e6b;
         border: none;
         cursor: pointer;
         width: 100px;
@@ -169,7 +190,7 @@
         color: $white;
         transition: background 0.3s linear;
         &:hover {
-          background: $light-blue;
+          background: #c52a5e;
         }
       }
     }

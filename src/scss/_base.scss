@@ -21,4 +21,21 @@ img {
 }
 .main {
   padding: 50px 0;
+  flex: 1;
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+input[type='number'] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }

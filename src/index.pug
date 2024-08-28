@@ -487,6 +487,17 @@ html
                         p.text Республика Беларусь, ООО "Мон Ами", УНП 191029787. Дата регистрации в торговом реестре интернет-магазина monami.by 03.05.2021 номер гос. регистрации 509027. Свидетельство о гос. регистрации N191029787 от 29.05.2008, выдано Минским городским исполнительным комитетом
                         .payment
                             img(src="./img/webpay.png", alt="")
+        .modal
+            form(action="")
+                button(type="button").close
+                    i(class="fa-solid fa-xmark")
+                label Логин
+                    input(type="text" placeholder="Логин")
+                label Пароль
+                    input(type="password" placeholder="Пароль")
+                label Запомнить меня на этом устройстве
+                    input(type="checkbox")
+                button(type="button").entry Войти
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
         script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js")
