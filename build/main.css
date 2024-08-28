@@ -272,15 +272,16 @@ input[type=number] {
   gap: 10px;
   top: 35px;
   background: #fff;
-  padding: 0px 10px 10px;
+  padding: 10px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   z-index: 1000;
   left: 0;
   right: 0;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 .navdesktop__top .phones .submenu:hover {
   display: -webkit-box;
@@ -1611,33 +1612,28 @@ input[type=number] {
 .products__link h3 {
   font-weight: 700;
   color: #000;
-  margin-bottom: 10px;
+  height: 55px;
 }
 .products__link .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 .products__link .price span:nth-child(1) span {
-  color: red;
+  color: #e52e6b;
   font-weight: 700;
+  font-size: 2rem;
 }
 .products__link .price span:nth-child(2) {
   position: relative;
   color: #000;
   font-style: italic;
-}
-.products__link .price span:nth-child(2)::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: red;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  text-decoration: line-through;
+  text-decoration-color: #e52e6b;
 }
 .products .sale {
   position: absolute;
@@ -1895,27 +1891,22 @@ input[type=number] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 .product__info .price span:nth-child(1) span {
-  color: #ff7c00;
+  color: #e52e6b;
   font-weight: 700;
+  font-size: 2rem;
 }
 .product__info .price span:nth-child(2) {
   position: relative;
   color: #000;
   font-style: italic;
-}
-.product__info .price span:nth-child(2)::before {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #c60000;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  text-decoration: line-through;
+  text-decoration-color: #e52e6b;
 }
 .product__info .cart {
   display: -webkit-box;
