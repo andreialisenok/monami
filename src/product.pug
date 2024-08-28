@@ -18,7 +18,7 @@ html
         header.header
             .container
                 .header__row
-                    a(href='#').logo
+                    a(href='/').logo
                         img(src="./img/logo.jpg", alt="Монами")
                     nav.navdesktop
                         .navdesktop__top
@@ -378,14 +378,24 @@ html
                                     .swiper-wrapper
                                         .swiper-slide
                                             img(src="./img/slide.jpg", alt="")
+                                            button(type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                                i(class="fa-solid fa-expand")
                                         .swiper-slide
                                             img(src="./img/slide1.jpg", alt="")
+                                            button(type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                                i(class="fa-solid fa-expand")
                                         .swiper-slide
                                             img(src="./img/slide2.jpg", alt="")
+                                            button(type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                                i(class="fa-solid fa-expand")
                                         .swiper-slide
                                             img(src="./img/slide3.jpg", alt="")
+                                            button(type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                                i(class="fa-solid fa-expand")
                                         .swiper-slide
                                             img(src="./img/slide4.jpg", alt="")
+                                            button(type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
+                                                i(class="fa-solid fa-expand")
                                         .swiper-slide
                                             img(src="./img/slide5.jpg", alt="")
                             .product__carousel-item
@@ -413,7 +423,7 @@ html
                                     span 5,17 Руб.
                                 span 2,5 Руб.
                             .cart
-                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                                button(type="button").basket В корзину
                                 .counter
                                     button(type="button")
                                         i(class="fa-solid fa-minus")

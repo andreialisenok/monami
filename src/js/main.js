@@ -18,11 +18,19 @@ const swiper = new Swiper('.carousel', {
 const carouselProduct = new Swiper('.carousel-product', {
   loop: true,
   spaceBetween: 5,
-  slidesPerView: 5,
   freeMode: true,
+  slidesPerView: 3,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 5,
+    },
   },
 });
 const carouselProduct2 = new Swiper('.carousel-product2', {

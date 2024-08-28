@@ -1750,12 +1750,29 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 300px;
 }
 .product__carousel .carousel-product2 .swiper-slide img {
-  max-width: 300px;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.product__carousel .carousel-product2 .swiper-slide .view {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-size: 2rem;
+  z-index: 100;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
+}
+.product__carousel .carousel-product2 .swiper-slide .view:hover {
+  color: #ff7c00;
 }
 .product__carousel .carousel-product .swiper-slide {
   height: 100px;
