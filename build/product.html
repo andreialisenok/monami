@@ -17,193 +17,158 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <div class="header__top">
-          <div class="container">
-            <div class="header__row">
-              <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a>
-                <div class="submenu"><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
+        <div class="container">
+          <div class="header__row"><a class="logo" href="#"><img src="./img/logo.jpg" alt="Монами"></a>
+            <nav class="navdesktop">
+              <div class="navdesktop__top">
+                <div class="phones"><a href="#"><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a>
+                  <div class="submenu"><a href="##"><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
+                </div>
+                <ul class="menu">
+                  <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Условия сотрудничества</a></li>
+                  <li class="menu__item"><a class="menu__link" href="">Оплата и Доставка</a></li>
+                </ul>
+                <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a></div>
+                <div class="time-work"><i class="fa-solid fa-clock"></i> Пн-Пт, с <b>9:00 </b>до <b>18:00</b></div>
               </div>
-              <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Условия сотрудничества</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Оплата и Доставка</a></li>
-              </ul>
-              <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a>
-                <div><i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b>18:00</b></div>
-              </div>
-              <div class="login">
-                <input type="text" placeholder="Логин">
-                <input type="text" placeholder="Пароль">
-                <button type="button"><i class="fa-solid fa-user"></i>Войти</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="header__bottom">
-          <div class="container">
-            <div class="header__row"><a class="logo" href="#"><img src="./img/logo.jpg" alt="Монами"></a>
-              <nav class="nav-desktop">
-                <button class="phones" type="button"><i class="fa-solid fa-phone"></i>
-                  <div class="phones__list"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
-                </button>
-                <p class="subtext">Ведущий поставщик сувенирной продукции и товаров для дома.</p>
-                <button class="all-items" type="button"><i class="fa-solid fa-list"></i>Все товары</button>
-                <button class="search" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="navdesktop__bottom"><a class="all-items" href="./products.html">Все товары</a>
                 <div class="search-input">
                   <input type="text" placeholder="Поиск">
-                  <button class="search-input__close" type="button"><i class="fa-solid fa-xmark"></i></button>
                 </div>
-                <button class="favorite" type="button"><i class="fa-solid fa-heart"></i><span class="favorite__count">10</span></button>
+                <button class="login" type="button">Войти</button>
                 <button class="basket" type="button"><i class="fa-solid fa-cart-shopping"></i><span class="basket__count">0</span></button>
-                <button class="login" type="button"><i class="fa-solid fa-user"></i></button>
-                <button class="burger" type="button"><span></span><span></span><span></span></button>
-              </nav>
-              <nav class="nav-mobile">
+              </div>
+            </nav>
+            <nav class="navmobile">
+              <div class="search-input" id="searchInput">
+                <input type="text" placeholder="Поиск">
+                <button class="search-input__close" type="button"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <button class="search" type="button" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="phones" type="button" id="btnPhones"><i class="fa-solid fa-phone"></i>
+                <div class="phones__list"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
+              </button>
+              <button class="basket" type="button"><i class="fa-solid fa-cart-shopping"></i><span class="basket__count">0</span></button>
+              <button class="login" type="button"><i class="fa-solid fa-user"></i></button>
+              <button class="burger" type="button"><span></span><span></span><span></span></button>
+            </nav>
+            <nav class="menumobile" id="menumobile">
+              <div class="menumobile__wrap">
                 <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="#">Все товары</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">НОВОЕ ПОСТУПЛЕНИЕ</a>
+                  <li class="menu__item"><a class="menu__link" href="./products.html">Все товары</a></li>
+                  <li class="menu__item"><a class="menu__link" href="####">Новое поступление</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Новое поступление</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu__item"><a class="menu__link" href="#">АКЦИИ/РАСПРОДАЖИ</a>
-                    <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu__item"><a class="menu__link" href="#">КУХНЯ,  ХОЗТОВАРЫ</a>
-                    <ul class="submenu">
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#!">Акции/распродажи</a>
+                    <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Акции/распродажи</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">МЕШКИ С РУЧКАМИ</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Кухня, хотовары</a>
                     <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухня, хотовары</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">ДЕКОР и ПОДАРКИ</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Мешки с ручками</a>
                     <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Мешки с ручками</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">СУМКИ-ТЕЛЕЖКИ</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Декор и подарки</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Сумки-тележки</a>
                     <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Сумки-тележки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">ДАЧА,  ПИКНИК, ТУРИЗМ</a>
+                  <li class="menu__item"><a class="menu__link" href="#">Дача, пикник, туризм</a>
                     <ul class="submenu">
+                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Дача, пикник, туризм</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
                       <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">РЕПЕЛЛЕНТЫ</a>
-                    <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu__item"><a class="menu__link" href="#">НОВЫЙ ГОД</a>
-                    <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-                    </ul>
-                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#">Репелленты</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Новый год</a></li>
                 </ul>
                 <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
                 <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a>
                   <div><i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b>18:00</b></div>
                 </div>
-              </nav>
-            </div>
+              </div>
+            </nav>
+            <div class="mobile-overlay"></div>
           </div>
         </div>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="http://localhost:9999/">НОВОЕ ПОСТУПЛЕНИЕ</a>
+        <ul class="menudesktop">
+          <li class="menu__item"><a class="menu__link" href="http://localhost:9999/">Новое поступление</a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">АКЦИИ/РАСПРОДАЖИ</a>
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">ПОСУДА</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">КУХНЯ,  ХОЗТОВАРЫ</a>
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">МЕШКИ С РУЧКАМИ</a>
+          <li class="menu__item"><a class="menu__link" href="#">Акции/распродажи</a>
+            <ul class="submenu">
+              <li class="submenu__item"><a class="submenu__link" href="#">Новое поступление</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+            </ul>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="#">Кухня, хотовары</a>
             <ul class="submenu">
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
@@ -211,10 +176,10 @@
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">ДЕКОР и ПОДАРКИ</a>
+          <li class="menu__item"><a class="menu__link" href="#">Мешки с ручками</a>
             <ul class="submenu">
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
@@ -222,10 +187,11 @@
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">СУМКИ-ТЕЛЕЖКИ</a>
+          <li class="menu__item"><a class="menu__link" href="#">Декор и подарки</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Сумки-тележки</a>
             <ul class="submenu">
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
@@ -233,62 +199,68 @@
               <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
               <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
+              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">ДАЧА,  ПИКНИК, ТУРИЗМ</a>
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">РЕПЕЛЛЕНТЫ</a>
-            <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, ТЕКСТИЛЬ</a></li>
-            </ul>
-          </li>
-          <li class="menu__item"><a class="menu__link" href="#">НОВЫЙ ГОД</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Дача, пикник, туризм</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Репелленты</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Новый год</a></li>
         </ul>
       </header>
       <main class="main">
         <div class="container">
           <div class="main__row">
-            <div class="swiper carousel-product">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+            <div class="product">
+              <div class="product__carousel">
+                <div class="product__carousel-item">
+                  <div class="swiper carousel-product2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/slide.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide5.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__carousel-item">
+                  <div class="swiper carousel-product">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="./img/slide.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide1.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide3.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide4.jpg" alt=""></div>
+                      <div class="swiper-slide"><img src="./img/slide5.jpg" alt=""></div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-            <div class="thumbsSlide swiper carousel-product2">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="./img/slide2.jpg" alt=""></div>
+              <div class="product__info"><span class="art">код: 124413</span>
+                <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix) </h3>
+                <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div>
+                <div class="cart">
+                  <button class="basket" type="button" data-fancybox data-type="image" data-caption="This image has a caption">В корзину</button>
+                  <div class="counter">
+                    <button type="button"><i class="fa-solid fa-minus"></i></button>
+                    <input type="number" value="1">
+                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+                <p class="manufacturer"><span>Производитель: </span>SELLERS UNION CO.,LTD., 19F №.1 NINGBO, RESEARCH DEVELOPMENT PARK 399 JUXIAN ROAD NATIONAL HI-TECH ZONE,NINGBO,315103 Китай</p>
+                <p class="info">Сумка для косметики с запоминающимся внешним видом и продуманным дизайном, сумка идеально подходят для личного использования. Изготовленная из качественного материала. Размер 23x16.5x23.5 позволяет эргономично разместить самые необходимые косметические средства и др. мелочи для путешествий и хранения дома. Крышка с зеркалом поможет вам насладиться процессом использования своих любимых косметических продуктов.</p>
               </div>
             </div>
-            <div class="product"></div>
           </div>
         </div>
       </main>
       <footer class="footer">
         <div class="footer__top">
           <div class="container">
-            <div class="footer__row"><a class="logo" href="#"><img src="./img/logo.jpg" alt="Монами"></a>
+            <div class="footer__row">
               <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Условия сотрудничества</a></li>
@@ -299,9 +271,7 @@
                 <li class="menu__item"><a class="menu__link" href="#">Видео Гирлянды</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
               </ul>
-              <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a>
-                <button class="back-call" type="button"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</button>
-              </div>
+              <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</a></div>
               <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a>
                 <div><i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b>18:00</b></div>
               </div>
@@ -317,7 +287,6 @@
           </div>
         </div>
       </footer>
-      <div class="overlay"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

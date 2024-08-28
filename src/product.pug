@@ -16,68 +16,18 @@ html
   body
     .wrap
         header.header
-            .header__top
-                .container
-                    .header__row
-                        .phones
-                            a(href="")
-                                img(src="./img/mts.png", alt="MTS")
-                                | +375 33 666 90 10
-                            a(href="")
-                                img(src="./img/a1.png", alt="A1")
-                                | +375 29 666 80 04
-                            .submenu
+            .container
+                .header__row
+                    a(href='#').logo
+                        img(src="./img/logo.jpg", alt="Монами")
+                    nav.navdesktop
+                        .navdesktop__top
+                            .phones
                                 a(href="#")
-                                    i(class="fa-solid fa-phone")
+                                    img(src="./img/mts.png", alt="MTS")
                                     | +375 33 666 90 10
-                                a(href="#")
-                                    i(class="fa-solid fa-phone")
-                                    |+375 33 666 90 10
-                                a(href="#")
-                                    i(class="fa-solid fa-phone")
-                                    | +375 33 666 90 10
-                                a(href="#")
-                                    i(class="fa-solid fa-phone-volume")
-                                    | Обратный звонок
-                        ul.menu
-                            li.menu__item
-                                a(href="").menu__link О компании
-                            li.menu__item
-                                a(href="").menu__link Условия сотрудничества
-                            li.menu__item
-                                a(href="").menu__link Оплата и Доставка
-                        .contacts
-                            a(href="")
-                                i(class="fa-solid fa-envelope")
-                                | info@monami.by
-                            a(href="")
-                                i(class="fa-solid fa-location-dot")
-                                | г. Минск, ул. Бабушкина, дом 6А, комната 203
-                            div
-                                i(class="fa-solid fa-clock")
-                                | Пн-Пт, с
-                                b 9:00
-                                | до
-                                b 18:00
-                        .login
-                            input(type="text" placeholder='Логин')
-                            input(type="text" placeholder='Пароль')
-                            button(type='button')
-                                i(class="fa-solid fa-user")
-                                | Войти
-            .header__bottom
-                .container
-                    .header__row
-                        a(href='#').logo
-                            img(src="./img/logo.jpg", alt="Монами")
-                        nav.nav-desktop
-                            button(type="button").phones
-                                i(class="fa-solid fa-phone")
-                                .phones__list
-                                    a(href="")
-                                        img(src="./img/mts.png", alt="MTS")
-                                        | +375 33 666 90 10
-                                    a(href="")
+                                .submenu
+                                    a(href="##")
                                         img(src="./img/a1.png", alt="A1")
                                         | +375 29 666 80 04
                                     a(href="#")
@@ -92,71 +42,105 @@ html
                                     a(href="#")
                                         i(class="fa-solid fa-phone-volume")
                                         | Обратный звонок
-                            p.subtext Ведущий поставщик сувенирной продукции и товаров для дома.
-                            button(type="button").all-items
-                                i(class="fa-solid fa-list")
-                                |Все товары
-                            button(type="button").search
-                                i(class="fa-solid fa-magnifying-glass")
+                            ul.menu
+                                li.menu__item
+                                    a(href="").menu__link О компании
+                                li.menu__item
+                                    a(href="").menu__link Условия сотрудничества
+                                li.menu__item
+                                    a(href="").menu__link Оплата и Доставка
+                            .contacts
+                                a(href="")
+                                    i(class="fa-solid fa-envelope")
+                                    | info@monami.by
+                                a(href="")
+                                    i(class="fa-solid fa-location-dot")
+                                    | г. Минск, ул. Бабушкина, дом 6А, комната 203
+                            .time-work
+                                i(class="fa-solid fa-clock")
+                                |  Пн-Пт, с 
+                                b 9:00 
+                                | до 
+                                b 18:00
+                        .navdesktop__bottom
+                            a(href="./products.html").all-items Все товары
                             .search-input
                                 input(type="text" placeholder="Поиск")
-                                button(type="button").search-input__close
-                                    i(class="fa-solid fa-xmark")
-                            button(type="button").favorite
-                                i(class="fa-solid fa-heart")
-                                span.favorite__count 10
+                            //- button(type="button").favorite
+                            //-     i(class="fa-regular fa-heart")
+                            //-     span.favorite__count 10
+                            button(type="button").login Войти
                             button(type="button").basket
                                 i(class="fa-solid fa-cart-shopping")
                                 span.basket__count 0
-                            button(type="button").login
-                                i(class="fa-solid fa-user")
-                            button(type="button").burger
-                                span
-                                span
-                                span
-                        nav.nav-mobile
+                    nav.navmobile
+                        .search-input#searchInput
+                            input(type="text" placeholder="Поиск")
+                            button(type="button").search-input__close
+                                i(class="fa-solid fa-xmark")
+                        button(type="button").search#btnSearch
+                            i(class="fa-solid fa-magnifying-glass")
+                        button(type="button").phones#btnPhones
+                            i(class="fa-solid fa-phone")
+                            .phones__list
+                                a(href="")
+                                    img(src="./img/mts.png", alt="MTS")
+                                    | +375 33 666 90 10
+                                a(href="")
+                                    img(src="./img/a1.png", alt="A1")
+                                    | +375 29 666 80 04
+                                a(href="#")
+                                    i(class="fa-solid fa-phone")
+                                    | +375 33 666 90 10
+                                a(href="#")
+                                    i(class="fa-solid fa-phone")
+                                    |+375 33 666 90 10
+                                a(href="#")
+                                    i(class="fa-solid fa-phone")
+                                    | +375 33 666 90 10
+                                a(href="#")
+                                    i(class="fa-solid fa-phone-volume")
+                                    | Обратный звонок
+                        button(type="button").basket
+                            i(class="fa-solid fa-cart-shopping")
+                            span.basket__count 0
+                        button(type="button").login
+                            i(class="fa-solid fa-user")
+                        button(type="button").burger
+                                    span
+                                    span
+                                    span
+                    nav.menumobile#menumobile
+                        .menumobile__wrap
                             ul.menu
                                 li.menu__item
-                                    a(href='#').menu__link Все товары
+                                    a(href="./products.html").menu__link Все товары
                                 li.menu__item
-                                    a(href='#').menu__link НОВОЕ ПОСТУПЛЕНИЕ
+                                    a(href='####').menu__link Новое поступление
                                     ul.submenu
                                         li.submenu__item
-                                            a(href="#").submenu__link ПОСУДА
+                                            a(href="#@").submenu__link.backArrow Назад
                                         li.submenu__item
-                                            a(href="#").submenu__link Ванна и туалет
+                                            a(href="#").submenu__link Новое поступление
+                                        li.submenu__item
+                                            a(href="###").submenu__link Ванна и туалет
                                         li.submenu__item
                                             a(href="#").submenu__link Баня и сауна
-                                        li.submenu__item
-                                            a(href="#").submenu__link ПОСУДА
-                                        li.submenu__item
-                                            a(href="#").submenu__link Крючки
-                                        li.submenu__item
-                                            a(href="#").submenu__link Хозтовары
-                                        li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
-                                li.menu__item
-                                    a(href='#').menu__link АКЦИИ/РАСПРОДАЖИ
-                                    ul.submenu
-                                        li.submenu__item
-                                            a(href="#").submenu__link ПОСУДА
-                                        li.submenu__item
-                                            a(href="#").submenu__link Ванна и туалет
-                                        li.submenu__item
-                                            a(href="#").submenu__link Баня и сауна
-                                        li.submenu__item
-                                            a(href="#").submenu__link ПОСУДА
-                                        li.submenu__item
-                                            a(href="#").submenu__link Крючки
-                                        li.submenu__item
-                                            a(href="#").submenu__link Хозтовары
-                                        li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
-                                li.menu__item
-                                    a(href='#').menu__link КУХНЯ,  ХОЗТОВАРЫ
-                                    ul.submenu
                                         li.submenu__item
                                             a(href="#").submenu__link Посуда
+                                        li.submenu__item
+                                            a(href="#").submenu__link Крючки
+                                        li.submenu__item
+                                            a(href="#").submenu__link Хозтовары
+                                        li.submenu__item
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
+                                li.menu__item
+                                    a(href='#!').menu__link Акции/распродажи
+                                    ul.submenu
+                                        li.submenu__item
+                                            a(href="#@").submenu__link.backArrow Назад
+                                        li.submenu__item
+                                            a(href="#").submenu__link Акции/распродажи
                                         li.submenu__item
                                             a(href="#").submenu__link Ванна и туалет
                                         li.submenu__item
@@ -168,10 +152,14 @@ html
                                         li.submenu__item
                                             a(href="#").submenu__link Хозтовары
                                         li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                                 li.menu__item
-                                    a(href='#').menu__link МЕШКИ С РУЧКАМИ
+                                    a(href='#').menu__link Кухня, хотовары
                                     ul.submenu
+                                        li.submenu__item
+                                            a(href="#@").submenu__link.backArrow Назад
+                                        li.submenu__item
+                                            a(href="#").submenu__link Кухня, хотовары
                                         li.submenu__item
                                             a(href="#").submenu__link Посуда
                                         li.submenu__item
@@ -185,10 +173,14 @@ html
                                         li.submenu__item
                                             a(href="#").submenu__link Хозтовары
                                         li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                                 li.menu__item
-                                    a(href='#').menu__link ДЕКОР и ПОДАРКИ
+                                    a(href='#').menu__link Мешки с ручками
                                     ul.submenu
+                                        li.submenu__item
+                                            a(href="#@").submenu__link.backArrow Назад
+                                        li.submenu__item
+                                            a(href="#").submenu__link Мешки с ручками
                                         li.submenu__item
                                             a(href="#").submenu__link Посуда
                                         li.submenu__item
@@ -202,10 +194,16 @@ html
                                         li.submenu__item
                                             a(href="#").submenu__link Хозтовары
                                         li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                                 li.menu__item
-                                    a(href='#').menu__link СУМКИ-ТЕЛЕЖКИ
+                                    a(href='#').menu__link Декор и подарки
+                                li.menu__item
+                                    a(href='#').menu__link Сумки-тележки
                                     ul.submenu
+                                        li.submenu__item
+                                            a(href="#@").submenu__link.backArrow Назад
+                                        li.submenu__item
+                                            a(href='#').submenu__link Сумки-тележки
                                         li.submenu__item
                                             a(href="#").submenu__link Посуда
                                         li.submenu__item
@@ -219,10 +217,14 @@ html
                                         li.submenu__item
                                             a(href="#").submenu__link Хозтовары
                                         li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                                 li.menu__item
-                                    a(href='#').menu__link ДАЧА,  ПИКНИК, ТУРИЗМ
+                                    a(href='#').menu__link Дача, пикник, туризм
                                     ul.submenu
+                                        li.submenu__item
+                                            a(href="#@").submenu__link.backArrow Назад
+                                        li.submenu__item
+                                            a(href='#').submenu__link Дача, пикник, туризм
                                         li.submenu__item
                                             a(href="#").submenu__link Посуда
                                         li.submenu__item
@@ -236,41 +238,11 @@ html
                                         li.submenu__item
                                             a(href="#").submenu__link Хозтовары
                                         li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                                 li.menu__item
-                                    a(href='#').menu__link РЕПЕЛЛЕНТЫ
-                                    ul.submenu
-                                        li.submenu__item
-                                            a(href="#").submenu__link Посуда
-                                        li.submenu__item
-                                            a(href="#").submenu__link Ванна и туалет
-                                        li.submenu__item
-                                            a(href="#").submenu__link Баня и сауна
-                                        li.submenu__item
-                                            a(href="#").submenu__link Посуда
-                                        li.submenu__item
-                                            a(href="#").submenu__link Крючки
-                                        li.submenu__item
-                                            a(href="#").submenu__link Хозтовары
-                                        li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                    a(href='#').menu__link Репелленты
                                 li.menu__item
-                                    a(href='#').menu__link НОВЫЙ ГОД
-                                    ul.submenu
-                                        li.submenu__item
-                                            a(href="#").submenu__link Посуда
-                                        li.submenu__item
-                                            a(href="#").submenu__link Ванна и туалет
-                                        li.submenu__item
-                                            a(href="#").submenu__link Баня и сауна
-                                        li.submenu__item
-                                            a(href="#").submenu__link Посуда
-                                        li.submenu__item
-                                            a(href="#").submenu__link Крючки
-                                        li.submenu__item
-                                            a(href="#").submenu__link Хозтовары
-                                        li.submenu__item
-                                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                                    a(href='#').menu__link Новый год
                             .phones
                                 a(href="")
                                     img(src="./img/mts.png", alt="MTS")
@@ -303,48 +275,13 @@ html
                                     b 9:00
                                     | до
                                     b 18:00
-            ul.menu
+                    .mobile-overlay
+            ul.menudesktop
                 li.menu__item
-                    a(href='http://localhost:9999/').menu__link НОВОЕ ПОСТУПЛЕНИЕ
+                    a(href='http://localhost:9999/').menu__link Новое поступление
                     ul.submenu
                         li.submenu__item
-                            a(href="#").submenu__link ПОСУДА
-                        li.submenu__item
-                            a(href="#").submenu__link Ванна и туалет
-                        li.submenu__item
-                            a(href="#").submenu__link Баня и сауна
-                        li.submenu__item
-                            a(href="#").submenu__link ПОСУДА
-                        li.submenu__item
-                            a(href="#").submenu__link Крючки
-                        li.submenu__item
-                            a(href="#").submenu__link Хозтовары
-                        li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
-                li.menu__item
-                    a(href='#').menu__link АКЦИИ/РАСПРОДАЖИ
-                    ul.submenu
-                        li.submenu__item
-                            a(href="#").submenu__link ПОСУДА
-                        li.submenu__item
-                            a(href="#").submenu__link Ванна и туалет
-                        li.submenu__item
-                            a(href="#").submenu__link Баня и сауна
-                        li.submenu__item
-                            a(href="#").submenu__link ПОСУДА
-                        li.submenu__item
-                            a(href="#").submenu__link Крючки
-                        li.submenu__item
-                            a(href="#").submenu__link Хозтовары
-                        li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
-                li.menu__item
-                    a(href='#').menu__link КУХНЯ,  ХОЗТОВАРЫ
-                    ul.submenu
-                        li.submenu__item
-                            a(href="#").submenu__link Посуда
-                        li.submenu__item
-                            a(href="#").submenu__link Ванна и туалет
+                            a(href="###").submenu__link Ванна и туалет
                         li.submenu__item
                             a(href="#").submenu__link Баня и сауна
                         li.submenu__item
@@ -354,9 +291,26 @@ html
                         li.submenu__item
                             a(href="#").submenu__link Хозтовары
                         li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                 li.menu__item
-                    a(href='#').menu__link МЕШКИ С РУЧКАМИ
+                    a(href='#').menu__link Акции/распродажи
+                    ul.submenu
+                        li.submenu__item
+                            a(href="#").submenu__link Новое поступление
+                        li.submenu__item
+                            a(href="###").submenu__link Ванна и туалет
+                        li.submenu__item
+                            a(href="#").submenu__link Баня и сауна
+                        li.submenu__item
+                            a(href="#").submenu__link Посуда
+                        li.submenu__item
+                            a(href="#").submenu__link Крючки
+                        li.submenu__item
+                            a(href="#").submenu__link Хозтовары
+                        li.submenu__item
+                            a(href="#").submenu__link Кухонные принадлежности, текстиль
+                li.menu__item
+                    a(href='#').menu__link Кухня, хотовары
                     ul.submenu
                         li.submenu__item
                             a(href="#").submenu__link Посуда
@@ -371,9 +325,9 @@ html
                         li.submenu__item
                             a(href="#").submenu__link Хозтовары
                         li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                 li.menu__item
-                    a(href='#').menu__link ДЕКОР и ПОДАРКИ
+                    a(href='#').menu__link Мешки с ручками
                     ul.submenu
                         li.submenu__item
                             a(href="#").submenu__link Посуда
@@ -388,9 +342,11 @@ html
                         li.submenu__item
                             a(href="#").submenu__link Хозтовары
                         li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                 li.menu__item
-                    a(href='#').menu__link СУМКИ-ТЕЛЕЖКИ
+                    a(href='#').menu__link Декор и подарки
+                li.menu__item
+                    a(href='#').menu__link Сумки-тележки
                     ul.submenu
                         li.submenu__item
                             a(href="#").submenu__link Посуда
@@ -405,83 +361,73 @@ html
                         li.submenu__item
                             a(href="#").submenu__link Хозтовары
                         li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                            a(href="#").submenu__link Кухонные принадлежности, текстиль
                 li.menu__item
-                    a(href='#').menu__link ДАЧА,  ПИКНИК, ТУРИЗМ
-                    ul.submenu
-                        li.submenu__item
-                            a(href="#").submenu__link Посуда
-                        li.submenu__item
-                            a(href="#").submenu__link Ванна и туалет
-                        li.submenu__item
-                            a(href="#").submenu__link Баня и сауна
-                        li.submenu__item
-                            a(href="#").submenu__link Посуда
-                        li.submenu__item
-                            a(href="#").submenu__link Крючки
-                        li.submenu__item
-                            a(href="#").submenu__link Хозтовары
-                        li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                    a(href='#').menu__link Дача, пикник, туризм
                 li.menu__item
-                    a(href='#').menu__link РЕПЕЛЛЕНТЫ
-                    ul.submenu
-                        li.submenu__item
-                            a(href="#").submenu__link Посуда
-                        li.submenu__item
-                            a(href="#").submenu__link Ванна и туалет
-                        li.submenu__item
-                            a(href="#").submenu__link Баня и сауна
-                        li.submenu__item
-                            a(href="#").submenu__link Посуда
-                        li.submenu__item
-                            a(href="#").submenu__link Крючки
-                        li.submenu__item
-                            a(href="#").submenu__link Хозтовары
-                        li.submenu__item
-                            a(href="#").submenu__link Кухонные принадлежности, ТЕКСТИЛЬ
+                    a(href='#').menu__link Репелленты
                 li.menu__item
-                                    a(href='#').menu__link НОВЫЙ ГОД
+                    a(href='#').menu__link Новый год
         main.main
             .container
                 .main__row
-                    .swiper.carousel-product
-                        .swiper-wrapper
-                            .swiper-slide
-                                img(src="./img/slide1.jpg", alt="")
-                            .swiper-slide
-                                img(src="./img/slide2.jpg", alt="")
-                            .swiper-slide
-                                img(src="./img/slide1.jpg", alt="")
-                            .swiper-slide
-                                img(src="./img/slide2.jpg", alt="")
-                        .swiper-button-prev
-                        .swiper-button-next
-                    .thumbsSlide.swiper.carousel-product2
-                        .swiper-wrapper
-                            .swiper-slide
-                                img(src="./img/slide2.jpg", alt="")
-                            .swiper-slide
-                                img(src="./img/slide2.jpg", alt="")
-                            .swiper-slide
-                                img(src="./img/slide2.jpg", alt="")
                     .product
-                    //-     h3 Кружка MUG-288  350мл  8,6х8,8см(Mix)
-                    //-     button(type="button").favorite
-                    //-         i(class="fa-regular fa-heart")
-                    //-     button(type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)").view
-                    //-                 i(class="fa-solid fa-expand")
-                    //-     .cart
-                    //-         span Цена: 
-                    //-             span 5,17 Руб.
-                    //-         button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
-                    //- .info
+                        .product__carousel
+                            .product__carousel-item
+                                .swiper.carousel-product2
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="./img/slide.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide1.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide2.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide3.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide4.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide5.jpg", alt="")
+                            .product__carousel-item
+                                .swiper.carousel-product
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="./img/slide.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide1.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide2.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide3.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide4.jpg", alt="")
+                                        .swiper-slide
+                                            img(src="./img/slide5.jpg", alt="")
+                                    .swiper-button-prev
+                                    .swiper-button-next
+                        .product__info
+                            span.art код: 124413
+                            h3 Кружка MUG-288  350мл  8,6х8,8см(Mix) 
+                            .price
+                                span Цена: 
+                                    span 5,17 Руб.
+                                span 2,5 Руб.
+                            .cart
+                                button(type="button" data-fancybox data-type="image" data-caption="This image has a caption").basket В корзину
+                                .counter
+                                    button(type="button")
+                                        i(class="fa-solid fa-minus")
+                                    input(type="number" value='1')
+                                    button(type="button")
+                                        i(class="fa-solid fa-plus")
+                            p.manufacturer
+                                span Производитель: 
+                                | SELLERS UNION CO.,LTD., 19F №.1 NINGBO, RESEARCH DEVELOPMENT PARK 399 JUXIAN ROAD NATIONAL HI-TECH ZONE,NINGBO,315103 Китай
+                            p.info Сумка для косметики с запоминающимся внешним видом и продуманным дизайном, сумка идеально подходят для личного использования. Изготовленная из качественного материала. Размер 23x16.5x23.5 позволяет эргономично разместить самые необходимые косметические средства и др. мелочи для путешествий и хранения дома. Крышка с зеркалом поможет вам насладиться процессом использования своих любимых косметических продуктов.
         footer.footer
             .footer__top
                 .container
                     .footer__row
-                        a(href='#').logo
-                            img(src="./img/logo.jpg", alt="Монами")
                         ul.menu
                             li.menu__item
                                 a(href="#").menu__link О компании
@@ -515,7 +461,7 @@ html
                             a(href="#")
                                 i(class="fa-solid fa-phone")
                                 | +375 33 666 90 10
-                            button(type="button").back-call
+                            a(href="#")
                                 i(class="fa-solid fa-phone-volume")
                                 | Обратный звонок
                         .contacts
@@ -537,7 +483,6 @@ html
                         p.text Республика Беларусь, ООО "Мон Ами", УНП 191029787. Дата регистрации в торговом реестре интернет-магазина monami.by 03.05.2021 номер гос. регистрации 509027. Свидетельство о гос. регистрации N191029787 от 29.05.2008, выдано Минским городским исполнительным комитетом
                         .payment
                             img(src="./img/webpay.png", alt="")
-        .overlay
         script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
         script(src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js")

@@ -5,8 +5,12 @@
   &__item {
     position: relative;
     padding: 20px;
-    &:not(:last-child) {
-      border-bottom: 1px solid $gray;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    &:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
     @media (min-width: 576px) {
       width: 50%;
@@ -15,41 +19,75 @@
       width: 33.33333%;
     }
     @media (min-width: 1200px) {
+      width: 25%;
+    }
+    @media (min-width: 1400px) {
       width: 20%;
     }
   }
   &__link {
     display: flex;
     flex-direction: column;
+    color: $black;
     .img {
-      padding: 30px;
-    }
-    &:hover {
-      h3 {
-        color: $orange;
+      padding: 40px 0 10px;
+      position: relative;
+      height: 300px;
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+      &__bottom {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        left: 0;
+        right: 0;
+        top: 0;
       }
     }
+    .art {
+      margin-bottom: 5px;
+      color: $gray;
+    }
     h3 {
-      transition: color 0.3s ease-in-out;
+      font-weight: 700;
       color: $black;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      span {
+        &:nth-child(1) {
+          span {
+            color: $orange;
+            font-weight: 700;
+          }
+        }
+        &:nth-child(2) {
+          position: relative;
+          color: $black;
+          &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: $gray;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
     }
   }
-
-  .favorite {
-    width: 20px;
-    height: 20px;
-    background: none;
-    cursor: pointer;
-    border: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 2rem;
-    z-index: 100;
-    transition: color 0.3s ease-in-out;
-    &:hover {
-      color: $blue;
-    }
+  .sale {
+    background: $blue;
+    color: $white;
+    padding: 5px 10px;
   }
   .view {
     width: 20px;
@@ -57,42 +95,65 @@
     background: none;
     cursor: pointer;
     border: none;
-    position: absolute;
-    top: 20px;
-    left: 20px;
     font-size: 2rem;
     z-index: 100;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s linear;
     &:hover {
-      color: $blue;
+      color: $orange;
     }
   }
   .cart {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-    span {
-      text-transform: uppercase;
-      span {
+    margin-top: auto;
+    .counter {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        font-family: $exo2;
+        font-size: 1.5rem;
+        padding: 0 5px;
+        border: none;
+        width: 50px;
+        text-align: center;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          appearance: none;
+        }
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        background: $light-gray;
+        height: 40px;
+        width: 40px;
+        transition: background 0.3s linear, color 0.3s linear;
         color: $black;
-        font-weight: 700;
+        &:hover {
+          background: $light-blue;
+          i {
+            color: $white;
+          }
+        }
+        i {
+          transition: color 0.3s linear;
+          color: $black;
+        }
       }
     }
     .basket {
-      background: none;
-      border: 1px solid $black;
-      border-radius: 5px;
+      background: $blue;
+      border: none;
       cursor: pointer;
-      width: 120px;
+      width: 100px;
       height: 40px;
-      color: $black;
-      font-weight: 700;
-      text-transform: uppercase;
+      color: $white;
+      transition: background 0.3s linear;
       &:hover {
-        border: 1px solid $blue;
-        background: $blue;
-        color: $white;
+        background: $light-blue;
       }
     }
   }
