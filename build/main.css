@@ -1902,7 +1902,7 @@ input[type=number] {
   gap: 10px;
 }
 .product__info .price span:nth-child(1) span {
-  color: #e52e6b;
+  color: #e76d54;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -1911,7 +1911,7 @@ input[type=number] {
   color: #000;
   font-style: italic;
   text-decoration: line-through;
-  text-decoration-color: #e52e6b;
+  text-decoration-color: #e76d54;
 }
 .product__info .cart {
   display: -webkit-box;
@@ -1966,7 +1966,7 @@ input[type=number] {
   color: #000;
 }
 .product__info .cart .counter button:hover {
-  background: #e52e6b;
+  background: #c35b46;
 }
 .product__info .cart .counter button:hover i {
   color: #fff;
@@ -1977,7 +1977,7 @@ input[type=number] {
   color: #000;
 }
 .product__info .cart .basket {
-  background: #e52e6b;
+  background: #e76d54;
   border: none;
   cursor: pointer;
   width: 100px;
@@ -1987,7 +1987,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .product__info .cart .basket:hover {
-  background: #c52a5e;
+  background: #c35b46;
 }
 .product__info .manufacturer {
   margin-bottom: 20px;
