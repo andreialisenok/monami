@@ -596,57 +596,57 @@
         }
       }
       &:nth-child(1) {
-        background: linear-gradient(to right, #3136f1 0%, #522abb 100%);
+        background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
         .submenu {
-          background: linear-gradient(to right, #3136f1 0%, #522abb 100%);
+          background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
         }
       }
       &:nth-child(2) {
-        background: linear-gradient(to right, #522abb 0%, #731e85 100%);
+        background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
         .submenu {
-          background: linear-gradient(to right, #522abb 0%, #731e85 100%);
+          background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
         }
       }
       &:nth-child(3) {
-        background: linear-gradient(to right, #731e85 0%, #941251 100%);
+        background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
         .submenu {
-          background: linear-gradient(to right, #731e85 0%, #941251 100%);
+          background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
         }
       }
       &:nth-child(4) {
-        background: linear-gradient(to right, #941251 0%, #b5061b 100%);
+        background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
         .submenu {
-          background: linear-gradient(to right, #941251 0%, #b5061b 100%);
+          background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
         }
       }
       &:nth-child(5) {
-        background: linear-gradient(to right, #b5061b 0%, #cd0e00 100%);
+        background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
         .submenu {
-          background: linear-gradient(to right, #b5061b 0%, #cd0e00 100%);
+          background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
         }
       }
       &:nth-child(6) {
-        background: linear-gradient(to right, #cd0e00 0%, #d92900 100%);
+        background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
         .submenu {
-          background: linear-gradient(to right, #cd0e00 0%, #d92900 100%);
+          background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
         }
       }
       &:nth-child(7) {
-        background: linear-gradient(to right, #d92900 0%, #e64500 100%);
+        background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
         .submenu {
-          background: linear-gradient(to right, #d92900 0%, #e64500 100%);
+          background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
         }
       }
       &:nth-child(8) {
-        background: linear-gradient(to right, #e64500 0%, #f26000 100%);
+        background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
         .submenu {
-          background: linear-gradient(to right, #e64500 0%, #f26000 100%);
+          background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
         }
       }
       &:nth-child(9) {
-        background: linear-gradient(to right, #f26000 0%, #ff7c00 100%);
+        background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
         .submenu {
-          background: linear-gradient(to right, #f26000 0%, #ff7c00 100%);
+          background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
         }
       }
     }
@@ -927,4 +927,10 @@
   &.active {
     display: block;
   }
+}
+
+.test {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to right, #3d3ef0, #d44347, #f68e5f);
 }

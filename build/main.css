@@ -897,76 +897,76 @@ input[type=number] {
     display: flex;
   }
   .menudesktop .menu__item:nth-child(1) {
-    background: -webkit-gradient(linear, left top, right top, from(#3136f1), to(#522abb));
-    background: linear-gradient(to right, #3136f1 0%, #522abb 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), to(#5f3fca));
+    background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
   }
   .menudesktop .menu__item:nth-child(1) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#3136f1), to(#522abb));
-    background: linear-gradient(to right, #3136f1 0%, #522abb 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), to(#5f3fca));
+    background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
   }
   .menudesktop .menu__item:nth-child(2) {
-    background: -webkit-gradient(linear, left top, right top, from(#522abb), to(#731e85));
-    background: linear-gradient(to right, #522abb 0%, #731e85 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#5f3fca), to(#8041a6));
+    background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
   }
   .menudesktop .menu__item:nth-child(2) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#522abb), to(#731e85));
-    background: linear-gradient(to right, #522abb 0%, #731e85 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#5f3fca), to(#8041a6));
+    background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
   }
   .menudesktop .menu__item:nth-child(3) {
-    background: -webkit-gradient(linear, left top, right top, from(#731e85), to(#941251));
-    background: linear-gradient(to right, #731e85 0%, #941251 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#8041a6), to(#a1417f));
+    background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
   }
   .menudesktop .menu__item:nth-child(3) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#731e85), to(#941251));
-    background: linear-gradient(to right, #731e85 0%, #941251 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#8041a6), to(#a1417f));
+    background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
   }
   .menudesktop .menu__item:nth-child(4) {
-    background: -webkit-gradient(linear, left top, right top, from(#941251), to(#b5061b));
-    background: linear-gradient(to right, #941251 0%, #b5061b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#a1417f), to(#c3435a));
+    background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
   }
   .menudesktop .menu__item:nth-child(4) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#941251), to(#b5061b));
-    background: linear-gradient(to right, #941251 0%, #b5061b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#a1417f), to(#c3435a));
+    background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
   }
   .menudesktop .menu__item:nth-child(5) {
-    background: -webkit-gradient(linear, left top, right top, from(#b5061b), to(#cd0e00));
-    background: linear-gradient(to right, #b5061b 0%, #cd0e00 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#c3435a), to(#d84c4a));
+    background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
   }
   .menudesktop .menu__item:nth-child(5) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#b5061b), to(#cd0e00));
-    background: linear-gradient(to right, #b5061b 0%, #cd0e00 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#c3435a), to(#d84c4a));
+    background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
   }
   .menudesktop .menu__item:nth-child(6) {
-    background: -webkit-gradient(linear, left top, right top, from(#cd0e00), to(#d92900));
-    background: linear-gradient(to right, #cd0e00 0%, #d92900 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#d84c4a), to(#df5c4f));
+    background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
   }
   .menudesktop .menu__item:nth-child(6) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#cd0e00), to(#d92900));
-    background: linear-gradient(to right, #cd0e00 0%, #d92900 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#d84c4a), to(#df5c4f));
+    background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
   }
   .menudesktop .menu__item:nth-child(7) {
-    background: -webkit-gradient(linear, left top, right top, from(#d92900), to(#e64500));
-    background: linear-gradient(to right, #d92900 0%, #e64500 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#df5c4f), to(#e76d54));
+    background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
   }
   .menudesktop .menu__item:nth-child(7) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#d92900), to(#e64500));
-    background: linear-gradient(to right, #d92900 0%, #e64500 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#df5c4f), to(#e76d54));
+    background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
   }
   .menudesktop .menu__item:nth-child(8) {
-    background: -webkit-gradient(linear, left top, right top, from(#e64500), to(#f26000));
-    background: linear-gradient(to right, #e64500 0%, #f26000 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#e76d54), to(#ee7d59));
+    background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
   }
   .menudesktop .menu__item:nth-child(8) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#e64500), to(#f26000));
-    background: linear-gradient(to right, #e64500 0%, #f26000 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#e76d54), to(#ee7d59));
+    background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
   }
   .menudesktop .menu__item:nth-child(9) {
-    background: -webkit-gradient(linear, left top, right top, from(#f26000), to(#ff7c00));
-    background: linear-gradient(to right, #f26000 0%, #ff7c00 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ee7d59), to(#f68e5f));
+    background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
   }
   .menudesktop .menu__item:nth-child(9) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#f26000), to(#ff7c00));
-    background: linear-gradient(to right, #f26000 0%, #ff7c00 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ee7d59), to(#f68e5f));
+    background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
   }
   .menudesktop .menu__link {
     width: 100%;
@@ -1342,6 +1342,13 @@ input[type=number] {
   display: block;
 }
 
+.test {
+  height: 100px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), color-stop(#d44347), to(#f68e5f));
+  background: linear-gradient(to right, #3d3ef0, #d44347, #f68e5f);
+}
+
 @media (min-width: 768px) {
   .swiper-wrap {
     padding: 0 20px;
@@ -1589,6 +1596,42 @@ input[type=number] {
   .products__item {
     width: 20%;
   }
+}
+.products__item:nth-child(2) .sale {
+  background: #d44347;
+}
+.products__item:nth-child(2) .cart button {
+  background: #d44347;
+}
+.products__item:nth-child(2) .cart button:hover {
+  background: #a03236;
+}
+.products__item:nth-child(3) .sale {
+  background: #3d3ef0;
+}
+.products__item:nth-child(3) .cart button {
+  background: #3d3ef0;
+}
+.products__item:nth-child(3) .cart button:hover {
+  background: #3333cb;
+}
+.products__item:nth-child(4) .sale {
+  background: #f68e5f;
+}
+.products__item:nth-child(4) .cart button {
+  background: #f68e5f;
+}
+.products__item:nth-child(4) .cart button:hover {
+  background: #c1704b;
+}
+.products__item:nth-child(5) .sale {
+  background: #e76d54;
+}
+.products__item:nth-child(5) .cart button {
+  background: #e76d54;
+}
+.products__item:nth-child(5) .cart button:hover {
+  background: rgb(193, 100, 72);
 }
 .products__link {
   display: -webkit-box;
