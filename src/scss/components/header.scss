@@ -261,7 +261,8 @@
         &:active,
         &:focus {
           outline: auto;
-          outline-color: $orange;
+          outline-color: rgba(255, 124, 0, 0.6);
+          outline-style: solid;
         }
       }
     }
@@ -547,7 +548,8 @@
       &:active,
       &:focus {
         outline: auto;
-        outline-color: $orange;
+        outline-color: rgba(255, 124, 0, 0.6);
+        outline-style: solid;
       }
     }
     &__close {

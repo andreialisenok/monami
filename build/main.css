@@ -499,7 +499,8 @@ input[type=number] {
 }
 .navdesktop__bottom .search-input input:focus, .navdesktop__bottom .search-input input:active, .navdesktop__bottom .search-input input:focus {
   outline: auto;
-  outline-color: #ff7c00;
+  outline-color: rgba(255, 124, 0, 0.6);
+  outline-style: solid;
 }
 .navdesktop__bottom .basket {
   width: 20px;
@@ -838,7 +839,8 @@ input[type=number] {
 }
 .navmobile .search-input input:focus, .navmobile .search-input input:active, .navmobile .search-input input:focus {
   outline: auto;
-  outline-color: #ff7c00;
+  outline-color: rgba(255, 124, 0, 0.6);
+  outline-style: solid;
 }
 .navmobile .search-input__close {
   background: none;
@@ -1728,7 +1730,7 @@ input[type=number] {
   color: #000;
 }
 .products .cart .counter button:hover {
-  background: #fd8067;
+  background: #c96551;
 }
 .products .cart .counter button:hover i {
   color: #fff;
@@ -1749,7 +1751,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .products .cart .basket:hover {
-  background: #fd8067;
+  background: #c96551;
 }
 
 .product {
@@ -1966,7 +1968,7 @@ input[type=number] {
   color: #000;
 }
 .product__info .cart .counter button:hover {
-  background: #fd8067;
+  background: #c96551;
 }
 .product__info .cart .counter button:hover i {
   color: #fff;
@@ -1987,7 +1989,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .product__info .cart .basket:hover {
-  background: #fd8067;
+  background: #c96551;
 }
 .product__info .manufacturer {
   margin-bottom: 20px;
@@ -2332,7 +2334,8 @@ input[type=number] {
 }
 .modal form label input:focus, .modal form label input:active, .modal form label input:focus {
   outline: auto;
-  outline-color: #ff7c00;
+  outline-style: solid;
+  outline-color: rgba(255, 124, 0, 0.6);
 }
 .modal form label input[type=checkbox] {
   width: 15px;

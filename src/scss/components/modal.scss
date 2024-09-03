@@ -47,7 +47,8 @@
         &:active,
         &:focus {
           outline: auto;
-          outline-color: $orange;
+          outline-style: solid;
+          outline-color: rgba(255, 124, 0, 0.6);
         }
         // border: 1px solid transparent;
         // &:focus {
