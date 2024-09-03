@@ -1728,7 +1728,7 @@ input[type=number] {
   color: #000;
 }
 .products .cart .counter button:hover {
-  background: #c35b46;
+  background: #fd8067;
 }
 .products .cart .counter button:hover i {
   color: #fff;
@@ -1749,7 +1749,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .products .cart .basket:hover {
-  background: #c35b46;
+  background: #fd8067;
 }
 
 .product {
@@ -1966,7 +1966,7 @@ input[type=number] {
   color: #000;
 }
 .product__info .cart .counter button:hover {
-  background: #c35b46;
+  background: #fd8067;
 }
 .product__info .cart .counter button:hover i {
   color: #fff;
@@ -1987,7 +1987,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .product__info .cart .basket:hover {
-  background: #c35b46;
+  background: #fd8067;
 }
 .product__info .manufacturer {
   margin-bottom: 20px;
