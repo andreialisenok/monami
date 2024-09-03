@@ -1342,13 +1342,6 @@ input[type=number] {
   display: block;
 }
 
-.test {
-  height: 100px;
-  width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), color-stop(#d44347), to(#f68e5f));
-  background: linear-gradient(to right, #3d3ef0, #d44347, #f68e5f);
-}
-
 @media (min-width: 768px) {
   .swiper-wrap {
     padding: 0 20px;
@@ -1597,42 +1590,6 @@ input[type=number] {
     width: 20%;
   }
 }
-.products__item:nth-child(2) .sale {
-  background: #d44347;
-}
-.products__item:nth-child(2) .cart button {
-  background: #d44347;
-}
-.products__item:nth-child(2) .cart button:hover {
-  background: #a03236;
-}
-.products__item:nth-child(3) .sale {
-  background: #3d3ef0;
-}
-.products__item:nth-child(3) .cart button {
-  background: #3d3ef0;
-}
-.products__item:nth-child(3) .cart button:hover {
-  background: #3333cb;
-}
-.products__item:nth-child(4) .sale {
-  background: #f68e5f;
-}
-.products__item:nth-child(4) .cart button {
-  background: #f68e5f;
-}
-.products__item:nth-child(4) .cart button:hover {
-  background: #c1704b;
-}
-.products__item:nth-child(5) .sale {
-  background: #e76d54;
-}
-.products__item:nth-child(5) .cart button {
-  background: #e76d54;
-}
-.products__item:nth-child(5) .cart button:hover {
-  background: rgb(193, 100, 72);
-}
 .products__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1672,7 +1629,7 @@ input[type=number] {
   gap: 10px;
 }
 .products__link .price span:nth-child(1) span {
-  color: #e52e6b;
+  color: #e76d54;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -1681,13 +1638,13 @@ input[type=number] {
   color: #000;
   font-style: italic;
   text-decoration: line-through;
-  text-decoration-color: #e52e6b;
+  text-decoration-color: #e76d54;
 }
 .products .sale {
   position: absolute;
   left: 0;
   bottom: 10px;
-  background: #e52e6b;
+  background: #e76d54;
   color: #fff;
   padding: 5px 10px;
 }
@@ -1771,7 +1728,7 @@ input[type=number] {
   color: #000;
 }
 .products .cart .counter button:hover {
-  background: #e52e6b;
+  background: #c35b46;
 }
 .products .cart .counter button:hover i {
   color: #fff;
@@ -1782,7 +1739,7 @@ input[type=number] {
   color: #000;
 }
 .products .cart .basket {
-  background: #e52e6b;
+  background: #e76d54;
   border: none;
   cursor: pointer;
   width: 100px;
@@ -1792,7 +1749,7 @@ input[type=number] {
   transition: background 0.3s linear;
 }
 .products .cart .basket:hover {
-  background: #c52a5e;
+  background: #c35b46;
 }
 
 .product {

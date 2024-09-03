@@ -24,58 +24,6 @@
     @media (min-width: 1400px) {
       width: 20%;
     }
-    &:nth-child(2) {
-      .sale {
-        background: #d44347;
-      }
-      .cart {
-        button {
-          background: #d44347;
-          &:hover {
-            background: #a03236;
-          }
-        }
-      }
-    }
-    &:nth-child(3) {
-      .sale {
-        background: #3d3ef0;
-      }
-      .cart {
-        button {
-          background: #3d3ef0;
-          &:hover {
-            background: #3333cb;
-          }
-        }
-      }
-    }
-    &:nth-child(4) {
-      .sale {
-        background: #f68e5f;
-      }
-      .cart {
-        button {
-          background: #f68e5f;
-          &:hover {
-            background: #c1704b;
-          }
-        }
-      }
-    }
-    &:nth-child(5) {
-      .sale {
-        background: #e76d54;
-      }
-      .cart {
-        button {
-          background: #e76d54;
-          &:hover {
-            background: rgb(193, 100, 72);
-          }
-        }
-      }
-    }
   }
   &__link {
     display: flex;
@@ -116,7 +64,7 @@
       span {
         &:nth-child(1) {
           span {
-            color: #e52e6b;
+            color: #e76d54;
             font-weight: 700;
             font-size: 2rem;
           }
@@ -126,7 +74,7 @@
           color: $black;
           font-style: italic;
           text-decoration: line-through;
-          text-decoration-color: #e52e6b;
+          text-decoration-color: #e76d54;
 
           // &::before {
           //   position: absolute;
@@ -146,7 +94,7 @@
     position: absolute;
     left: 0;
     bottom: 10px;
-    background: #e52e6b;
+    background: #e76d54;
     color: $white;
     padding: 5px 10px;
   }
@@ -205,7 +153,7 @@
         transition: background 0.3s linear, color 0.3s linear;
         color: $black;
         &:hover {
-          background: #e52e6b;
+          background: #c35b46;
           i {
             color: $white;
           }
@@ -217,7 +165,7 @@
       }
     }
     .basket {
-      background: #e52e6b;
+      background: #e76d54;
       border: none;
       cursor: pointer;
       width: 100px;
@@ -225,7 +173,7 @@
       color: $white;
       transition: background 0.3s linear;
       &:hover {
-        background: #c52a5e;
+        background: #c35b46;
       }
     }
   }
