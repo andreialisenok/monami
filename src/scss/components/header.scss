@@ -102,13 +102,15 @@
         &:hover {
           display: flex;
         }
-        a {
+        a,
+        .callback {
           display: flex;
           align-items: center;
           gap: 5px;
           color: $black;
           line-height: 1;
           transition: color 0.3s linear;
+          cursor: pointer;
           &:hover {
             color: $orange;
             & > i {
@@ -372,13 +374,15 @@
       &.active {
         transform: translateX(0%);
       }
-      a {
+      a,
+      .callback {
         display: flex;
         align-items: center;
         gap: 5px;
         color: $black;
         line-height: 1;
         transition: color 0.3s linear;
+        cursor: pointer;
         &:hover {
           color: $orange;
           & > i {
@@ -581,12 +585,15 @@
 .menudesktop {
   display: none;
   @media (min-width: 992px) {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     margin-top: 10px;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     .menu__item {
       position: relative;
-      width: 100%;
+      // width: 100%;
       &:hover {
         .menu__link {
           background: rgba(0, 0, 0, 0.1);
@@ -597,63 +604,63 @@
           }
         }
       }
-      &:nth-child(1) {
-        background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
-        .submenu {
-          background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
-        }
-      }
-      &:nth-child(2) {
-        background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
-        .submenu {
-          background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
-        }
-      }
-      &:nth-child(3) {
-        background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
-        .submenu {
-          background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
-        }
-      }
-      &:nth-child(4) {
-        background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
-        .submenu {
-          background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
-        }
-      }
-      &:nth-child(5) {
-        background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
-        .submenu {
-          background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
-        }
-      }
-      &:nth-child(6) {
-        background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
-        .submenu {
-          background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
-        }
-      }
-      &:nth-child(7) {
-        background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
-        .submenu {
-          background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
-        }
-      }
-      &:nth-child(8) {
-        background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
-        .submenu {
-          background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
-        }
-      }
-      &:nth-child(9) {
-        background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
-        .submenu {
-          background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
-        }
-      }
+      // &:nth-child(1) {
+      //   background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
+      //   }
+      // }
+      // &:nth-child(2) {
+      //   background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
+      //   }
+      // }
+      // &:nth-child(3) {
+      //   background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
+      //   }
+      // }
+      // &:nth-child(4) {
+      //   background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
+      //   }
+      // }
+      // &:nth-child(5) {
+      //   background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
+      //   }
+      // }
+      // &:nth-child(6) {
+      //   background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
+      //   }
+      // }
+      // &:nth-child(7) {
+      //   background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
+      //   }
+      // }
+      // &:nth-child(8) {
+      //   background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
+      //   }
+      // }
+      // &:nth-child(9) {
+      //   background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
+      //   .submenu {
+      //     background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
+      //   }
+      // }
     }
     .menu__link {
-      width: 100%;
+      // width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -681,6 +688,7 @@
       right: 0;
       top: 50px;
       z-index: 100;
+      background: inherit;
       &__item {
         width: 100%;
       }
@@ -855,12 +863,14 @@
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    a {
+    a,
+    .callback {
       display: flex;
       align-items: center;
       gap: 10px;
       color: $black;
       transition: color 0.3s linear;
+      cursor: pointer;
       &:hover {
         color: $orange;
         i {

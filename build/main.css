@@ -288,7 +288,8 @@ input[type=number] {
   display: -ms-flexbox;
   display: flex;
 }
-.navdesktop__top .phones .submenu a {
+.navdesktop__top .phones .submenu a,
+.navdesktop__top .phones .submenu .callback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,11 +301,14 @@ input[type=number] {
   line-height: 1;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
+  cursor: pointer;
 }
-.navdesktop__top .phones .submenu a:hover {
+.navdesktop__top .phones .submenu a:hover,
+.navdesktop__top .phones .submenu .callback:hover {
   color: #ff7c00;
 }
-.navdesktop__top .phones .submenu a:hover > i {
+.navdesktop__top .phones .submenu a:hover > i,
+.navdesktop__top .phones .submenu .callback:hover > i {
   color: #ff7c00;
 }
 .navdesktop__top .phones .submenu i {
@@ -638,7 +642,8 @@ input[type=number] {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
-.navmobile .phones__list a {
+.navmobile .phones__list a,
+.navmobile .phones__list .callback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -650,14 +655,18 @@ input[type=number] {
   line-height: 1;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
+  cursor: pointer;
 }
-.navmobile .phones__list a:hover {
+.navmobile .phones__list a:hover,
+.navmobile .phones__list .callback:hover {
   color: #ff7c00;
 }
-.navmobile .phones__list a:hover > i {
+.navmobile .phones__list a:hover > i,
+.navmobile .phones__list .callback:hover > i {
   color: #ff7c00;
 }
-.navmobile .phones__list a i {
+.navmobile .phones__list a i,
+.navmobile .phones__list .callback i {
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
   color: rgba(51, 51, 51, 0.5);
@@ -878,17 +887,13 @@ input[type=number] {
 }
 @media (min-width: 992px) {
   .menudesktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-top: 10px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .menudesktop .menu__item {
     position: relative;
-    width: 100%;
   }
   .menudesktop .menu__item:hover .menu__link {
     background: rgba(0, 0, 0, 0.1);
@@ -898,80 +903,7 @@ input[type=number] {
     display: -ms-flexbox;
     display: flex;
   }
-  .menudesktop .menu__item:nth-child(1) {
-    background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), to(#5f3fca));
-    background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
-  }
-  .menudesktop .menu__item:nth-child(1) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#3d3ef0), to(#5f3fca));
-    background: linear-gradient(to right, #3d3ef0 0%, #5f3fca 100%);
-  }
-  .menudesktop .menu__item:nth-child(2) {
-    background: -webkit-gradient(linear, left top, right top, from(#5f3fca), to(#8041a6));
-    background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
-  }
-  .menudesktop .menu__item:nth-child(2) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#5f3fca), to(#8041a6));
-    background: linear-gradient(to right, #5f3fca 0%, #8041a6 100%);
-  }
-  .menudesktop .menu__item:nth-child(3) {
-    background: -webkit-gradient(linear, left top, right top, from(#8041a6), to(#a1417f));
-    background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
-  }
-  .menudesktop .menu__item:nth-child(3) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#8041a6), to(#a1417f));
-    background: linear-gradient(to right, #8041a6 0%, #a1417f 100%);
-  }
-  .menudesktop .menu__item:nth-child(4) {
-    background: -webkit-gradient(linear, left top, right top, from(#a1417f), to(#c3435a));
-    background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
-  }
-  .menudesktop .menu__item:nth-child(4) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#a1417f), to(#c3435a));
-    background: linear-gradient(to right, #a1417f 0%, #c3435a 100%);
-  }
-  .menudesktop .menu__item:nth-child(5) {
-    background: -webkit-gradient(linear, left top, right top, from(#c3435a), to(#d84c4a));
-    background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
-  }
-  .menudesktop .menu__item:nth-child(5) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#c3435a), to(#d84c4a));
-    background: linear-gradient(to right, #c3435a 0%, #d84c4a 100%);
-  }
-  .menudesktop .menu__item:nth-child(6) {
-    background: -webkit-gradient(linear, left top, right top, from(#d84c4a), to(#df5c4f));
-    background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
-  }
-  .menudesktop .menu__item:nth-child(6) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#d84c4a), to(#df5c4f));
-    background: linear-gradient(to right, #d84c4a 0%, #df5c4f 100%);
-  }
-  .menudesktop .menu__item:nth-child(7) {
-    background: -webkit-gradient(linear, left top, right top, from(#df5c4f), to(#e76d54));
-    background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
-  }
-  .menudesktop .menu__item:nth-child(7) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#df5c4f), to(#e76d54));
-    background: linear-gradient(to right, #df5c4f 0%, #e76d54 100%);
-  }
-  .menudesktop .menu__item:nth-child(8) {
-    background: -webkit-gradient(linear, left top, right top, from(#e76d54), to(#ee7d59));
-    background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
-  }
-  .menudesktop .menu__item:nth-child(8) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#e76d54), to(#ee7d59));
-    background: linear-gradient(to right, #e76d54 0%, #ee7d59 100%);
-  }
-  .menudesktop .menu__item:nth-child(9) {
-    background: -webkit-gradient(linear, left top, right top, from(#ee7d59), to(#f68e5f));
-    background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
-  }
-  .menudesktop .menu__item:nth-child(9) .submenu {
-    background: -webkit-gradient(linear, left top, right top, from(#ee7d59), to(#f68e5f));
-    background: linear-gradient(to right, #ee7d59 0%, #f68e5f 100%);
-  }
   .menudesktop .menu__link {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1016,6 +948,7 @@ input[type=number] {
     right: 0;
     top: 50px;
     z-index: 100;
+    background: inherit;
   }
   .menudesktop .submenu__item {
     width: 100%;
@@ -1244,7 +1177,8 @@ input[type=number] {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.menumobile .phones a {
+.menumobile .phones a,
+.menumobile .phones .callback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,19 +1189,24 @@ input[type=number] {
   color: #000;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
+  cursor: pointer;
 }
-.menumobile .phones a:hover {
+.menumobile .phones a:hover,
+.menumobile .phones .callback:hover {
   color: #ff7c00;
 }
-.menumobile .phones a:hover i {
+.menumobile .phones a:hover i,
+.menumobile .phones .callback:hover i {
   color: #ff7c00;
 }
-.menumobile .phones a i {
+.menumobile .phones a i,
+.menumobile .phones .callback i {
   color: rgba(51, 51, 51, 0.5);
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
 }
-.menumobile .phones a img {
+.menumobile .phones a img,
+.menumobile .phones .callback img {
   height: 15px;
   width: 15px;
   -o-object-fit: cover;
@@ -2107,7 +2046,8 @@ input[type=number] {
     gap: 20px;
   }
 }
-.footer .phones a {
+.footer .phones a,
+.footer .phones .callback {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2119,26 +2059,33 @@ input[type=number] {
   line-height: 1;
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
+  cursor: pointer;
 }
-.footer .phones a:first-of-type {
+.footer .phones a:first-of-type,
+.footer .phones .callback:first-of-type {
   grid-area: tel1;
 }
-.footer .phones a:last-of-type {
+.footer .phones a:last-of-type,
+.footer .phones .callback:last-of-type {
   grid-area: tel2;
 }
-.footer .phones a:hover {
+.footer .phones a:hover,
+.footer .phones .callback:hover {
   color: #ff7c00;
 }
-.footer .phones a:hover i {
+.footer .phones a:hover i,
+.footer .phones .callback:hover i {
   color: #ff7c00;
 }
-.footer .phones a img {
+.footer .phones a img,
+.footer .phones .callback img {
   height: 15px;
   width: 15px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.footer .phones a i {
+.footer .phones a i,
+.footer .phones .callback i {
   -webkit-transition: color 0.3s linear;
   transition: color 0.3s linear;
   color: rgba(51, 51, 51, 0.5);

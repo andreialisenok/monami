@@ -50,14 +50,13 @@ const btnSearch = document.querySelector('#btnSearch');
 const search = document.querySelector('#searchInput');
 const searchClose = document.querySelector('#searchInput .search-input__close');
 const menuItem = document.querySelectorAll('#menumobile .menu .menu__item');
+const deskMenuItem = document.querySelectorAll('.menudesktop .menu__item');
+
 const submenuItem = document.querySelectorAll(
   '#menumobile .submenu .submenu__item'
 );
 const backArrows = document.querySelectorAll('.backArrow');
 const mobileOverlay = document.querySelector('.mobile-overlay');
-// const submenuItem = document.querySelectorAll(
-//   '#menumobile .submenu .menu__item'
-// );
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
@@ -119,4 +118,16 @@ modal.addEventListener('click', (e) => {
 });
 modalForm.addEventListener('click', (e) => {
   e.stopPropagation();
+});
+
+import colorGradient from 'javascript-color-gradient';
+
+const gradientArray = colorGradient
+  .setGradient('#3d3ef0', '#d44347', '#f68e5f')
+  .setMidpoint(deskMenuItem.length + 1);
+
+deskMenuItem.forEach((item, i) => {
+  item.style.background = `linear-gradient(to right, ${
+    gradientArray.getArray()[i]
+  }, ${gradientArray.getArray()[i + 1]})`;
 });

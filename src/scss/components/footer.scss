@@ -60,13 +60,15 @@
         gap: 20px;
       }
     }
-    a {
+    a,
+    .callback {
       display: flex;
       align-items: center;
       gap: 5px;
       color: $black;
       line-height: 1;
       transition: color 0.3s linear;
+      cursor: pointer;
       &:first-of-type {
         grid-area: tel1;
       }
