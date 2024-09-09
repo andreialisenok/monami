@@ -2,150 +2,379 @@
 <html>
   <head>
     <title>Монами</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
     <div class="wrap">
       <header class="header">
         <div class="container">
-          <div class="header__row"><a class="logo" href="/"><img src="./img/logo.jpg" alt="Монами"></a>
+          <div class="header__row">
+            <a class="logo" href="/"
+              ><img src="./img/logo.jpg" alt="Монами"
+            /></a>
             <nav class="navdesktop">
               <div class="navdesktop__top">
-                <div class="phones"><a href="#"><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a>
-                  <div class="submenu"><a href="##"><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a>
-                    <div class="callback"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</div>
+                <div class="phones">
+                  <a href="#"
+                    ><img src="./img/mts.png" alt="MTS" />+375 33 666 90 10</a
+                  >
+                  <div class="submenu">
+                    <a href="##"
+                      ><img src="./img/a1.png" alt="A1" />+375 29 666 80 04</a
+                    ><a href="#"
+                      ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                    ><a href="#"
+                      ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                    ><a href="#"
+                      ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                    >
+                    <div class="callback">
+                      <i class="fa-solid fa-phone-volume"></i>Обратный звонок
+                    </div>
                   </div>
                 </div>
                 <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="">О компании</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Условия сотрудничества</a></li>
-                  <li class="menu__item"><a class="menu__link" href="">Оплата и Доставка</a></li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">О компании</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">Условия сотрудничества</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="">Оплата и Доставка</a>
+                  </li>
                 </ul>
-                <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a></div>
-                <div class="time-work"><i class="fa-solid fa-clock"></i> Пн-Пт, с <b>9:00 </b>до <b>18:00</b></div>
+                <div class="contacts">
+                  <a href=""
+                    ><i class="fa-solid fa-envelope"></i>info@monami.by</a
+                  ><a href=""
+                    ><i class="fa-solid fa-location-dot"></i>г. Минск, ул.
+                    Бабушкина, дом 6А, комната 203</a
+                  >
+                </div>
+                <div class="time-work">
+                  <i class="fa-solid fa-clock"></i> Пн-Пт, с <b>9:00 </b>до
+                  <b>18:00</b>
+                </div>
               </div>
-              <div class="navdesktop__bottom"><a class="all-items" href="./products.html">Все товары</a>
+              <div class="navdesktop__bottom">
+                <a class="all-items" href="./products.html">Все товары</a>
                 <div class="search-input">
-                  <input type="text" placeholder="Поиск">
+                  <input type="text" placeholder="Поиск" />
                 </div>
                 <button class="login" type="button">Войти</button>
-                <button class="basket" type="button"><i class="fa-solid fa-cart-shopping"></i><span class="basket__count">0</span></button>
+                <button class="basket" type="button">
+                  <i class="fa-solid fa-cart-shopping"></i
+                  ><span class="basket__count">0</span>
+                </button>
               </div>
             </nav>
             <nav class="navmobile">
               <div class="search-input" id="searchInput">
-                <input type="text" placeholder="Поиск">
-                <button class="search-input__close" type="button"><i class="fa-solid fa-xmark"></i></button>
+                <input type="text" placeholder="Поиск" />
+                <button class="search-input__close" type="button">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
-              <button class="search" type="button" id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
-              <button class="phones" type="button" id="btnPhones"><i class="fa-solid fa-phone"></i>
-                <div class="phones__list"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a>
-                  <div class="callback"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</div>
+              <button class="search" type="button" id="btnSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button class="phones" type="button" id="btnPhones">
+                <i class="fa-solid fa-phone"></i>
+                <div class="phones__list">
+                  <a href=""
+                    ><img src="./img/mts.png" alt="MTS" />+375 33 666 90 10</a
+                  ><a href=""
+                    ><img src="./img/a1.png" alt="A1" />+375 29 666 80 04</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  >
+                  <div class="callback">
+                    <i class="fa-solid fa-phone-volume"></i>Обратный звонок
+                  </div>
                 </div>
               </button>
-              <button class="basket" type="button"><i class="fa-solid fa-cart-shopping"></i><span class="basket__count">0</span></button>
-              <button class="login" type="button"><i class="fa-solid fa-user"></i></button>
-              <button class="burger" type="button"><span></span><span></span><span></span></button>
+              <button class="basket" type="button">
+                <i class="fa-solid fa-cart-shopping"></i
+                ><span class="basket__count">0</span>
+              </button>
+              <button class="login" type="button">
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <button class="burger" type="button">
+                <span></span><span></span><span></span>
+              </button>
             </nav>
             <nav class="menumobile" id="menumobile">
               <div class="menumobile__wrap">
                 <ul class="menu">
-                  <li class="menu__item"><a class="menu__link" href="./products.html">Все товары</a></li>
-                  <li class="menu__item"><a class="menu__link" href="####">Новое поступление</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="./products.html">Все товары</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="####">Новое поступление</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Новое поступление</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Новое поступление</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="###">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#!">Акции/распродажи</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#!">Акции/распродажи</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Акции/распродажи</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Акции/распродажи</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Кухня, хотовары</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Кухня, хотовары</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухня, хотовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Кухня, хотовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Мешки с ручками</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Мешки с ручками</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Мешки с ручками</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Мешки с ручками</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Декор и подарки</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Сумки-тележки</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Декор и подарки</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Сумки-тележки</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Сумки-тележки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Сумки-тележки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Дача, пикник, туризм</a>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Дача, пикник, туризм</a>
                     <ul class="submenu">
-                      <li class="submenu__item"><a class="submenu__link backArrow" href="#@">Назад</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Дача, пикник, туризм</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-                      <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+                      <li class="submenu__item">
+                        <a class="submenu__link backArrow" href="#@">Назад</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Дача, пикник, туризм</a
+                        >
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Ванна и туалет</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Баня и сауна</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Посуда</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Крючки</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#">Хозтовары</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a class="submenu__link" href="#"
+                          >Кухонные принадлежности, текстиль</a
+                        >
+                      </li>
                     </ul>
                   </li>
-                  <li class="menu__item"><a class="menu__link" href="#">Репелленты</a></li>
-                  <li class="menu__item"><a class="menu__link" href="#">Новый год</a></li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Репелленты</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Новый год</a>
+                  </li>
                 </ul>
-                <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a>
-                  <div class="callback"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</div>
+                <div class="phones">
+                  <a href=""
+                    ><img src="./img/mts.png" alt="MTS" />+375 33 666 90 10</a
+                  ><a href=""
+                    ><img src="./img/a1.png" alt="A1" />+375 29 666 80 04</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  ><a href="#"
+                    ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                  >
+                  <div class="callback">
+                    <i class="fa-solid fa-phone-volume"></i>Обратный звонок
+                  </div>
                 </div>
-                <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a>
-                  <div><i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b>18:00</b></div>
+                <div class="contacts">
+                  <a href=""
+                    ><i class="fa-solid fa-envelope"></i>info@monami.by</a
+                  ><a href=""
+                    ><i class="fa-solid fa-location-dot"></i>г. Минск, ул.
+                    Бабушкина, дом 6А, комната 203</a
+                  >
+                  <div>
+                    <i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b
+                      >18:00</b
+                    >
+                  </div>
                 </div>
               </div>
             </nav>
@@ -153,298 +382,658 @@
           </div>
         </div>
         <ul class="menudesktop">
-          <li class="menu__item"><a class="menu__link" href="http://localhost:9999/">Новое поступление</a>
+          <li class="menu__item">
+            <a class="menu__link" href="http://localhost:9999/"
+              >Новое поступление</a
+            >
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="###">Ванна и туалет</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Баня и сауна</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Крючки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Хозтовары</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#"
+                  >Кухонные принадлежности, текстиль</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Акции/распродажи</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Акции/распродажи</a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Новое поступление</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="###">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Новое поступление</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="###">Ванна и туалет</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Баня и сауна</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Крючки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Хозтовары</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#"
+                  >Кухонные принадлежности, текстиль</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Кухня, хотовары</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Кухня, хотовары</a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Ванна и туалет</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Баня и сауна</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Крючки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Хозтовары</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#"
+                  >Кухонные принадлежности, текстиль</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Мешки с ручками</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Мешки с ручками</a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Ванна и туалет</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Баня и сауна</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Крючки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Хозтовары</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#"
+                  >Кухонные принадлежности, текстиль</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Декор и подарки</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Сумки-тележки</a>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Декор и подарки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Сумки-тележки</a>
             <ul class="submenu">
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Ванна и туалет</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Баня и сауна</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Посуда</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Крючки</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Хозтовары</a></li>
-              <li class="submenu__item"><a class="submenu__link" href="#">Кухонные принадлежности, текстиль</a></li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Ванна и туалет</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Баня и сауна</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Посуда</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Крючки</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#">Хозтовары</a>
+              </li>
+              <li class="submenu__item">
+                <a class="submenu__link" href="#"
+                  >Кухонные принадлежности, текстиль</a
+                >
+              </li>
             </ul>
           </li>
-          <li class="menu__item"><a class="menu__link" href="#">Дача, пикник, туризм</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Репелленты</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Новый год</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Дача, пикник, туризм</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Репелленты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Новый год</a>
+          </li>
         </ul>
       </header>
       <main class="main">
         <div class="container">
           <div class="main__row">
             <ul class="products">
-              <li class="products__item"><a class="products__link" href="./product.html">
-                  <div class="img"><img src="./img/products/product.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="./product.html">
+                  <div class="img">
+                    <img src="./img/products/product.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
+                  </div>
+                  <span class="art">код: 124413</span>
                   <h3>Кружка MUG-288</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product1.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product1.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product1.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product1.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
+                  </div>
+                  <span class="art">код: 124413</span>
                   <h3>Кружка</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product2.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product2.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product2.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product3.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product3.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product3.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product3.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product4.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product4.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product4.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product4.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix) Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>
+                    Кружка MUG-288 350мл 8,6х8,8см(Mix) Кружка MUG-288 350мл
+                    8,6х8,8см(Mix)
+                  </h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product5.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product5.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product5.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product5.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product6.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product6.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product6.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product6.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product7.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product7.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product7.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product7.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product2.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product2.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product2.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product2.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product4.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product4.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product4.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product4.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
-              <li class="products__item"><a class="products__link" href="#">
-                  <div class="img"><img src="./img/products/product1.jpg" alt="">
-                    <div class="img__bottom"><span class="sale">-20%</span>
-                      <button class="view" type="button" data-fancybox data-src="./img/products/product1.jpg" data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)">
-                        <svg viewBox="0 0 242.133 242.133" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                          <path d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"></path>
+              <li class="products__item">
+                <a class="products__link" href="#">
+                  <div class="img">
+                    <img src="./img/products/product1.jpg" alt="" />
+                    <div class="img__bottom">
+                      <span class="sale">-20%</span>
+                      <button
+                        class="view"
+                        type="button"
+                        data-fancybox
+                        data-src="./img/products/product1.jpg"
+                        data-caption="Кружка MUG-288  350мл  8,6х8,8см(Mix)"
+                      >
+                        <svg
+                          viewBox="0 0 242.133 242.133"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M227.133,83.033c8.283,0,15-6.716,15-15V15c0-8.284-6.717-15-15-15H174.1c-8.284,0-15,6.716-15,15 s6.716,15,15,15h16.82l-69.854,69.854L51.213,30h16.82c8.284,0,15-6.716,15-15s-6.716-15-15-15H15C6.717,0,0,6.716,0,15v53.033 c0,8.284,6.717,15,15,15c8.285,0,15-6.716,15-15v-16.82l69.854,69.854L30,190.92V174.1c0-8.284-6.715-15-15-15 c-8.283,0-15,6.716-15,15v53.033c0,8.284,6.717,15,15,15h53.033c8.284,0,15-6.716,15-15c0-8.284-6.716-15-15-15h-16.82 l69.854-69.854l69.854,69.854H174.1c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h53.033c8.283,0,15-6.716,15-15V174.1 c0-8.284-6.717-15-15-15c-8.285,0-15,6.716-15,15v16.82l-69.854-69.854l69.854-69.854v16.82 C212.133,76.317,218.848,83.033,227.133,83.033z"
+                          ></path>
                         </svg>
                       </button>
                     </div>
-                  </div><span class="art">код: 124413</span>
-                  <h3>Кружка MUG-288  350мл  8,6х8,8см(Mix)</h3>
-                  <div class="price"><span>Цена: <span>5,17 Руб.</span></span><span>2,5 Руб.</span></div></a>
+                  </div>
+                  <span class="art">код: 124413</span>
+                  <h3>Кружка MUG-288 350мл 8,6х8,8см(Mix)</h3>
+                  <div class="price">
+                    <span>Цена: <span>5,17 Руб.</span></span
+                    ><span>2,5 Руб.</span>
+                  </div></a
+                >
                 <div class="cart">
                   <button class="basket" type="button">В корзину</button>
                   <div class="counter">
-                    <button type="button"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" value="1">
-                    <button type="button"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button">
+                      <i class="fa-solid fa-minus"></i>
+                    </button>
+                    <input type="number" value="1" />
+                    <button type="button">
+                      <i class="fa-solid fa-plus"></i>
+                    </button>
                   </div>
                 </div>
               </li>
@@ -457,20 +1046,58 @@
           <div class="container">
             <div class="footer__row">
               <ul class="menu">
-                <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Условия сотрудничества</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Оплата и Доставка</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Уцененный товар</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Вакансии</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Видео Гирлянды</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">О компании</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Условия сотрудничества</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Оплата и Доставка</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Уцененный товар</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Вакансии</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Видео Гирлянды</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Контакты</a>
+                </li>
               </ul>
-              <div class="phones"><a href=""><img src="./img/mts.png" alt="MTS">+375 33 666 90 10</a><a href=""><img src="./img/a1.png" alt="A1">+375 29 666 80 04</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a><a href="#"><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a>
-                <div class="callback"><i class="fa-solid fa-phone-volume"></i>Обратный звонок</div>
+              <div class="phones">
+                <a href=""
+                  ><img src="./img/mts.png" alt="MTS" />+375 33 666 90 10</a
+                ><a href=""
+                  ><img src="./img/a1.png" alt="A1" />+375 29 666 80 04</a
+                ><a href="#"
+                  ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                ><a href="#"
+                  ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                ><a href="#"
+                  ><i class="fa-solid fa-phone"></i>+375 33 666 90 10</a
+                >
+                <div class="callback">
+                  <i class="fa-solid fa-phone-volume"></i>Обратный звонок
+                </div>
               </div>
-              <div class="contacts"><a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a><a href=""><i class="fa-solid fa-location-dot"></i>г. Минск, ул. Бабушкина, дом 6А, комната 203</a>
-                <div><i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b>18:00</b></div>
+              <div class="contacts">
+                <a href=""><i class="fa-solid fa-envelope"></i>info@monami.by</a
+                ><a href=""
+                  ><i class="fa-solid fa-location-dot"></i>г. Минск, ул.
+                  Бабушкина, дом 6А, комната 203</a
+                >
+                <div>
+                  <i class="fa-solid fa-clock"></i>Пн-Пт, с<b>9:00</b>до<b
+                    >18:00</b
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -478,23 +1105,34 @@
         <div class="footer__bottom">
           <div class="container">
             <div class="footer__row">
-              <p class="text">Республика Беларусь, ООО "Мон Ами", УНП 191029787. Дата регистрации в торговом реестре интернет-магазина monami.by 03.05.2021 номер гос. регистрации 509027. Свидетельство о гос. регистрации N191029787 от 29.05.2008, выдано Минским городским исполнительным комитетом</p>
-              <div class="payment"><img src="./img/webpay.png" alt=""></div>
+              <p class="text">
+                Республика Беларусь, ООО "Мон Ами", УНП 191029787. Дата
+                регистрации в торговом реестре интернет-магазина monami.by
+                03.05.2021 номер гос. регистрации 509027. Свидетельство о гос.
+                регистрации N191029787 от 29.05.2008, выдано Минским городским
+                исполнительным комитетом
+              </p>
+              <div class="payment"><img src="./img/webpay.png" alt="" /></div>
             </div>
           </div>
         </div>
       </footer>
       <div class="modal">
         <form action="">
-          <button class="close" type="button"><i class="fa-solid fa-xmark"></i></button>
-          <label>Логин
-            <input type="text" placeholder="Логин">
+          <button class="close" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <label
+            >Логин
+            <input type="text" placeholder="Логин" />
           </label>
-          <label>Пароль
-            <input type="password" placeholder="Пароль">
+          <label
+            >Пароль
+            <input type="password" placeholder="Пароль" />
           </label>
-          <label>Запомнить меня на этом устройстве
-            <input type="checkbox">
+          <label
+            >Запомнить меня на этом устройстве
+            <input type="checkbox" />
           </label>
           <button class="entry" type="button">Войти</button>
         </form>
