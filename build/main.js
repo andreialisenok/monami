@@ -231,123 +231,125 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var javascript_color_gradient__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var javascript_color_gradient__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(javascript_color_gradient__WEBPACK_IMPORTED_MODULE_0__);
-var swiper = new Swiper('.carousel', {
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  loop: true,
-  effect: 'fade',
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
-var carouselProduct = new Swiper('.carousel-product', {
-  loop: true,
-  spaceBetween: 5,
-  freeMode: true,
-  slidesPerView: 3,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
-  breakpoints: {
-    576: {
-      slidesPerView: 4
+
+document.addEventListener('DOMContentLoaded', function () {
+  var swiper = new Swiper('.carousel', {
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
     },
-    768: {
-      slidesPerView: 5
+    loop: true,
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     }
-  }
-});
-var carouselProduct2 = new Swiper('.carousel-product2', {
-  loop: true,
-  spaceBetween: 10,
-  thumbs: {
-    swiper: carouselProduct
-  }
-});
-var burger = document.querySelector('.burger');
-var menumobile = document.querySelector('#menumobile');
-var body = document.querySelector('body');
-var btnPhones = document.querySelector('#btnPhones');
-var phonesList = document.querySelector('#btnPhones .phones__list');
-var btnSearch = document.querySelector('#btnSearch');
-var search = document.querySelector('#searchInput');
-var searchClose = document.querySelector('#searchInput .search-input__close');
-var menuItem = document.querySelectorAll('#menumobile .menu .menu__item');
-var deskMenuItem = document.querySelectorAll('.menudesktop .menu__item');
-var submenuItem = document.querySelectorAll('#menumobile .submenu .submenu__item');
-var backArrows = document.querySelectorAll('.backArrow');
-var mobileOverlay = document.querySelector('.mobile-overlay');
-burger.addEventListener('click', function () {
-  burger.classList.toggle('active');
-  menumobile.classList.toggle('active');
-  body.classList.toggle('is-lock');
-  mobileOverlay.classList.toggle('active');
-});
-btnPhones.addEventListener('click', function () {
-  phonesList.classList.toggle('active');
-});
-btnSearch.addEventListener('click', function () {
-  search.classList.add('active');
-});
-searchClose.addEventListener('click', function () {
-  search.classList.remove('active');
-});
-menuItem.forEach(function (item) {
-  if (item.children.length === 2) {
-    item.children[0].classList.add('arrow');
-    item.addEventListener('click', function (e) {
-      e.preventDefault();
-      item.children[1].classList.add('active');
-    });
-    backArrows.forEach(function (link) {
-      link.addEventListener('click', function (e) {
+  });
+  var carouselProduct = new Swiper('.carousel-product', {
+    loop: true,
+    spaceBetween: 5,
+    freeMode: true,
+    slidesPerView: 3,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 4
+      },
+      768: {
+        slidesPerView: 5
+      }
+    }
+  });
+  var carouselProduct2 = new Swiper('.carousel-product2', {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: carouselProduct
+    }
+  });
+  var burger = document.querySelector('.burger');
+  var menumobile = document.querySelector('#menumobile');
+  var body = document.querySelector('body');
+  var btnPhones = document.querySelector('#btnPhones');
+  var phonesList = document.querySelector('#btnPhones .phones__list');
+  var btnSearch = document.querySelector('#btnSearch');
+  var search = document.querySelector('#searchInput');
+  var searchClose = document.querySelector('#searchInput .search-input__close');
+  var menuItem = document.querySelectorAll('#menumobile .menu .menu__item');
+  var deskMenuItem = document.querySelectorAll('.menudesktop .menu__item');
+  var submenuItem = document.querySelectorAll('#menumobile .submenu .submenu__item');
+  var backArrows = document.querySelectorAll('.backArrow');
+  var mobileOverlay = document.querySelector('.mobile-overlay');
+  burger.addEventListener('click', function () {
+    burger.classList.toggle('active');
+    menumobile.classList.toggle('active');
+    body.classList.toggle('is-lock');
+    mobileOverlay.classList.toggle('active');
+  });
+  btnPhones.addEventListener('click', function () {
+    phonesList.classList.toggle('active');
+  });
+  btnSearch.addEventListener('click', function () {
+    search.classList.add('active');
+  });
+  searchClose.addEventListener('click', function () {
+    search.classList.remove('active');
+  });
+  menuItem.forEach(function (item) {
+    if (item.children.length === 2) {
+      item.children[0].classList.add('arrow');
+      item.addEventListener('click', function (e) {
         e.preventDefault();
-        item.children[1].classList.remove('active');
+        item.children[1].classList.add('active');
       });
+      backArrows.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          item.children[1].classList.remove('active');
+        });
+      });
+    }
+  });
+  submenuItem.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.stopPropagation();
     });
-  }
-});
-submenuItem.forEach(function (item) {
-  item.addEventListener('click', function (e) {
+  });
+  mobileOverlay.addEventListener('click', function (e) {
+    burger.classList.toggle('active');
+    menumobile.classList.toggle('active');
+    body.classList.toggle('is-lock');
+    mobileOverlay.classList.toggle('active');
+  });
+  var login = document.querySelectorAll('.login');
+  var modal = document.querySelector('.modal');
+  var modalForm = document.querySelector('.modal form');
+  var btnModalClose = document.querySelector('.modal .close');
+  login.forEach(function (item) {
+    item.addEventListener('click', function () {
+      modal.classList.add('isOpen');
+    });
+  });
+  btnModalClose.addEventListener('click', function () {
+    modal.classList.remove('isOpen');
+  });
+  modal.addEventListener('click', function (e) {
+    modal.classList.remove('isOpen');
+  });
+  modalForm.addEventListener('click', function (e) {
     e.stopPropagation();
   });
-});
-mobileOverlay.addEventListener('click', function (e) {
-  burger.classList.toggle('active');
-  menumobile.classList.toggle('active');
-  body.classList.toggle('is-lock');
-  mobileOverlay.classList.toggle('active');
-});
-var login = document.querySelectorAll('.login');
-var modal = document.querySelector('.modal');
-var modalForm = document.querySelector('.modal form');
-var btnModalClose = document.querySelector('.modal .close');
-login.forEach(function (item) {
-  item.addEventListener('click', function () {
-    modal.classList.add('isOpen');
+  var gradientArray = javascript_color_gradient__WEBPACK_IMPORTED_MODULE_0___default().setGradient('#3d3ef0', '#d44347', '#f68e5f').setMidpoint(deskMenuItem.length + 1);
+  deskMenuItem.forEach(function (item, i) {
+    item.style.background = "linear-gradient(to right, ".concat(gradientArray.getArray()[i], ", ").concat(gradientArray.getArray()[i + 1], ")");
   });
-});
-btnModalClose.addEventListener('click', function () {
-  modal.classList.remove('isOpen');
-});
-modal.addEventListener('click', function (e) {
-  modal.classList.remove('isOpen');
-});
-modalForm.addEventListener('click', function (e) {
-  e.stopPropagation();
-});
-
-var gradientArray = javascript_color_gradient__WEBPACK_IMPORTED_MODULE_0___default().setGradient('#3d3ef0', '#d44347', '#f68e5f').setMidpoint(deskMenuItem.length + 1);
-deskMenuItem.forEach(function (item, i) {
-  item.style.background = "linear-gradient(to right, ".concat(gradientArray.getArray()[i], ", ").concat(gradientArray.getArray()[i + 1], ")");
 });
 }();
 /******/ })()
